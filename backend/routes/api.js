@@ -4,6 +4,7 @@ const {
   getFoodCourts,
   getAllOutlets,
   getOutletById,
+  searchCampusFood,
   updateItemStock,
   pauseOutlet,
   resumeOutlet,
@@ -23,6 +24,7 @@ const { protect, authorize } = require('../middleware/authMiddleware');
 router.get('/food-courts', getFoodCourts);
 router.get('/outlets', getAllOutlets);
 router.get('/outlets/:id', getOutletById);
+router.get('/search', searchCampusFood);
 
 // Academic Canteen BookMyShow-style Seat Map
 router.get('/canteen/seats/:id', getCanteenSeats);

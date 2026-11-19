@@ -1,10 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Clock, MapPin, Users, Armchair, ChevronRight } from 'lucide-react';
+import { useAuth } from '../../context/AuthContext';
 import Badge from '../ui/Badge';
 import DishImage from '../ui/DishImage';
 
 const OutletCard = ({ outlet }) => {
+  const navigate = useNavigate();
+  const { isAuthenticated } = useAuth();
+
   if (!outlet) return null;
 
   const isPaused = outlet.isPaused;
@@ -12,9 +16,22 @@ const OutletCard = ({ outlet }) => {
   const prepMins = outlet.prepMins ?? 8;
   const queueCount = outlet.queueCount ?? 3;
 
+  const handleCardClick = (e) => {
+    if (!isAuthenticated) {
+      e.preventDefault();
+      navigate('/login', {
+        state: {
+          message: `Please sign in first to explore ${outlet.name} and pre-order food.`,
+          from: `/outlet/${outlet.id}`,
+        },
+      });
+    }
+  };
+
   return (
     <Link
       to={`/outlet/${outlet.id}`}
+      onClick={handleCardClick}
       className="group block h-full bg-white rounded-card border border-border hover:border-primary/40 transition-all duration-200 overflow-hidden shadow-card flex flex-col"
     >
       {/* Outlet Banner Image */}
@@ -76,6 +93,15 @@ const OutletCard = ({ outlet }) => {
             <MapPin className="w-3.5 h-3.5 shrink-0 text-primary" />
             <span className="truncate">{outlet.location}</span>
           </div>
+
+          {outlet.matchingDishes && outlet.matchingDishes.length > 0 && (
+            <div className="mt-2.5 px-2.5 py-1.5 rounded-lg bg-accent/25 border border-accent/60 text-[11px] font-mono text-text flex items-center gap-1.5 animate-fadeIn">
+              <span className="font-bold text-primary shrink-0">Serves:</span>
+              <span className="truncate font-semibold text-text">
+                {outlet.matchingDishes.map(d => d.name).join(', ')}
+              </span>
+            </div>
+          )}
         </div>
 
         {/* Footer Metrics */}

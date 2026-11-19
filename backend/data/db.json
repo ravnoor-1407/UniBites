@@ -124,8 +124,8 @@
       "totalSeats": 0,
       "occupiedSeats": 0,
       "queueCount": 11,
-      "image": "https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/belgian_chocolate_waffle.webp",
+      "coverImage": "/images/menu/belgian_chocolate_waffle.webp"
     },
     {
       "id": "outlet-cc-bokki",
@@ -149,8 +149,8 @@
       "totalSeats": 0,
       "occupiedSeats": 0,
       "queueCount": 6,
-      "image": "https://images.unsplash.com/photo-1623341214825-9f4f963727da?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1623341214825-9f4f963727da?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/tteokbokki_rice_cakes.webp",
+      "coverImage": "/images/menu/tteokbokki_rice_cakes.webp"
     },
     {
       "id": "outlet-cc-wowchina",
@@ -174,8 +174,8 @@
       "totalSeats": 0,
       "occupiedSeats": 0,
       "queueCount": 7,
-      "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/veg_hakka_noodles.webp",
+      "coverImage": "/images/menu/veg_hakka_noodles.webp"
     },
     {
       "id": "outlet-cc-ovenexpress",
@@ -199,8 +199,8 @@
       "totalSeats": 0,
       "occupiedSeats": 0,
       "queueCount": 5,
-      "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/margherita_pizza.webp",
+      "coverImage": "/images/menu/margherita_pizza.webp"
     },
     {
       "id": "outlet-cc-kitchenette",
@@ -224,8 +224,8 @@
       "totalSeats": 0,
       "occupiedSeats": 0,
       "queueCount": 4,
-      "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/paneer_butter_masala_gravy.webp",
+      "coverImage": "/images/menu/paneer_butter_masala_gravy.webp"
     },
     {
       "id": "outlet-cc-amul",
@@ -249,8 +249,8 @@
       "totalSeats": 0,
       "occupiedSeats": 0,
       "queueCount": 2,
-      "image": "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/belgian_chocolate_ice_cream.webp",
+      "coverImage": "/images/menu/belgian_chocolate_ice_cream.webp"
     },
     {
       "id": "outlet-cc-nandjuice",
@@ -274,8 +274,8 @@
       "totalSeats": 0,
       "occupiedSeats": 0,
       "queueCount": 3,
-      "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/mango_alphonso_shake.webp",
+      "coverImage": "/images/menu/mango_alphonso_shake.webp"
     },
     {
       "id": "outlet-cse-kathi",
@@ -299,8 +299,8 @@
       "totalSeats": 0,
       "occupiedSeats": 0,
       "queueCount": 6,
-      "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/paneer_tikka_roll.webp",
+      "coverImage": "/images/menu/paneer_tikka_roll.webp"
     },
     {
       "id": "outlet-cse-kannu",
@@ -324,8 +324,8 @@
       "totalSeats": 0,
       "occupiedSeats": 0,
       "queueCount": 11,
-      "image": "https://images.unsplash.com/photo-1561336313-0bd5e0b27ec8?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1561336313-0bd5e0b27ec8?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/kulhad_masala_chai.webp",
+      "coverImage": "/images/menu/kulhad_masala_chai.webp"
     },
     {
       "id": "outlet-cse-basant",
@@ -349,8 +349,8 @@
       "totalSeats": 0,
       "occupiedSeats": 0,
       "queueCount": 3,
-      "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/rabri_falooda_glass.webp",
+      "coverImage": "/images/menu/rabri_falooda_glass.webp"
     },
     {
       "id": "outlet-cse-maggi",
@@ -374,8 +374,8 @@
       "totalSeats": 0,
       "occupiedSeats": 0,
       "queueCount": 5,
-      "image": "https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/peri_peri_fries.webp",
+      "coverImage": "/images/menu/peri_peri_fries.webp"
     },
     {
       "id": "outlet-cse-subway",
@@ -399,8 +399,8 @@
       "totalSeats": 0,
       "occupiedSeats": 0,
       "queueCount": 3,
-      "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/paneer_veggie_sub.webp",
+      "coverImage": "/images/menu/paneer_veggie_sub.webp"
     },
     {
       "id": "outlet-cse-chaicatering",
@@ -424,8 +424,8 @@
       "totalSeats": 0,
       "occupiedSeats": 0,
       "queueCount": 8,
-      "image": "https://images.unsplash.com/photo-1561336313-0bd5e0b27ec8?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1561336313-0bd5e0b27ec8?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/samosa_chole_chaat.webp",
+      "coverImage": "/images/menu/samosa_chole_chaat.webp"
     },
     {
       "id": "outlet-cse-punjabitadka",
@@ -449,8 +449,8 @@
       "totalSeats": 0,
       "occupiedSeats": 0,
       "queueCount": 6,
-      "image": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/dal_makhani_rice_bowl.webp",
+      "coverImage": "/images/menu/dal_makhani_rice_bowl.webp"
     },
     {
       "id": "outlet-bh2-shahji",
@@ -474,8 +474,8 @@
       "totalSeats": 0,
       "occupiedSeats": 0,
       "queueCount": 12,
-      "image": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/paneer_amritsari_kulcha.webp",
+      "coverImage": "/images/menu/paneer_amritsari_kulcha.webp"
     },
     {
       "id": "outlet-bh2-hangouts",
@@ -499,8 +499,8 @@
       "totalSeats": 0,
       "occupiedSeats": 0,
       "queueCount": 8,
-      "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/masala_dosa.webp",
+      "coverImage": "/images/menu/masala_dosa.webp"
     },
     {
       "id": "outlet-bh2-nand",
@@ -524,8 +524,8 @@
       "totalSeats": 0,
       "occupiedSeats": 0,
       "queueCount": 4,
-      "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/pomegranate_juice.webp",
+      "coverImage": "/images/menu/pomegranate_juice.webp"
     },
     {
       "id": "outlet-bh2-burger",
@@ -549,8 +549,8 @@
       "totalSeats": 0,
       "occupiedSeats": 0,
       "queueCount": 7,
-      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/crispy_veg_burger.webp",
+      "coverImage": "/images/menu/crispy_veg_burger.webp"
     },
     {
       "id": "outlet-b34-chaap",
@@ -574,8 +574,8 @@
       "totalSeats": 0,
       "occupiedSeats": 0,
       "queueCount": 6,
-      "image": "https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/tandoori_soya_chaap.webp",
+      "coverImage": "/images/menu/tandoori_soya_chaap.webp"
     },
     {
       "id": "outlet-b34-funbites",
@@ -599,8 +599,8 @@
       "totalSeats": 0,
       "occupiedSeats": 0,
       "queueCount": 5,
-      "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/chilli_garlic_noodles.webp",
+      "coverImage": "/images/menu/chilli_garlic_noodles.webp"
     },
     {
       "id": "outlet-b34-khaopiyo",
@@ -624,8 +624,8 @@
       "totalSeats": 0,
       "occupiedSeats": 0,
       "queueCount": 7,
-      "image": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/amul_butter_pav_bhaji.webp",
+      "coverImage": "/images/menu/amul_butter_pav_bhaji.webp"
     },
     {
       "id": "outlet-b34-oven",
@@ -649,8 +649,8 @@
       "totalSeats": 0,
       "occupiedSeats": 0,
       "queueCount": 4,
-      "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/farmhouse_veg_pizza.webp",
+      "coverImage": "/images/menu/farmhouse_veg_pizza.webp"
     },
     {
       "id": "outlet-canteen-b14",
@@ -674,8 +674,8 @@
       "pausedUntil": null,
       "maxOrdersPer5Min": 15,
       "queueCount": 5,
-      "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/breakfast_poha.webp",
+      "coverImage": "/images/menu/breakfast_poha.webp"
     },
     {
       "id": "outlet-canteen-b25",
@@ -699,8 +699,8 @@
       "pausedUntil": null,
       "maxOrdersPer5Min": 15,
       "queueCount": 8,
-      "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/deluxe_veg_thali.webp",
+      "coverImage": "/images/menu/deluxe_veg_thali.webp"
     },
     {
       "id": "outlet-canteen-b26",
@@ -724,8 +724,8 @@
       "pausedUntil": null,
       "maxOrdersPer5Min": 15,
       "queueCount": 4,
-      "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/steamed_idli_sambar.webp",
+      "coverImage": "/images/menu/steamed_idli_sambar.webp"
     },
     {
       "id": "outlet-canteen-b27",
@@ -749,8 +749,8 @@
       "pausedUntil": null,
       "maxOrdersPer5Min": 15,
       "queueCount": 6,
-      "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/aloo_paratha_dahi.webp",
+      "coverImage": "/images/menu/aloo_paratha_dahi.webp"
     },
     {
       "id": "outlet-canteen-b28",
@@ -774,8 +774,8 @@
       "pausedUntil": null,
       "maxOrdersPer5Min": 15,
       "queueCount": 5,
-      "image": "https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/bread_pakora.webp",
+      "coverImage": "/images/menu/bread_pakora.webp"
     },
     {
       "id": "outlet-canteen-b33",
@@ -799,8 +799,8 @@
       "pausedUntil": null,
       "maxOrdersPer5Min": 15,
       "queueCount": 10,
-      "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/special_executive_thali.webp",
+      "coverImage": "/images/menu/special_executive_thali.webp"
     },
     {
       "id": "outlet-canteen-b34",
@@ -824,8 +824,8 @@
       "pausedUntil": null,
       "maxOrdersPer5Min": 15,
       "queueCount": 12,
-      "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/veg_fried_rice.webp",
+      "coverImage": "/images/menu/veg_fried_rice.webp"
     },
     {
       "id": "outlet-fs-foodsquare",
@@ -849,8 +849,8 @@
       "totalSeats": 0,
       "occupiedSeats": 0,
       "queueCount": 9,
-      "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80",
-      "coverImage": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80"
+      "image": "/images/menu/chicken_dum_biryani.webp",
+      "coverImage": "/images/menu/chicken_dum_biryani.webp"
     }
   ],
   "menuItems": [

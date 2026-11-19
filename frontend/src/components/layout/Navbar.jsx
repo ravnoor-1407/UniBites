@@ -9,14 +9,15 @@ import {
   ChevronDown,
   Sparkles,
   UtensilsCrossed,
-  Clock
+  Clock,
+  LogIn
 } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import { useLocation } from '../../context/LocationContext';
 import { useCart } from '../../context/CartContext';
 
 const Navbar = ({ onSearchClick }) => {
-  const { user, logout } = useAuth();
+  const { user, logout, isAuthenticated } = useAuth();
   const { selectedLocation, setLocation, campusSpots } = useLocation();
   const { totalItemCount, grandTotal } = useCart();
   const navigate = useNavigate();
@@ -29,7 +30,31 @@ const Navbar = ({ onSearchClick }) => {
   const handleSearchSubmit = (e) => {
     e.preventDefault();
     if (searchInput.trim()) {
-      navigate(`/outlets?search=${encodeURIComponent(searchInput.trim())}`);
+      navigate(`/home?search=${encodeURIComponent(searchInput.trim())}`);
+    }
+  };
+
+  const handleNavLinkClick = (e, to, label) => {
+    if (!isAuthenticated && to !== '/home') {
+      e.preventDefault();
+      navigate('/login', {
+        state: {
+          message: `Please sign in first to access ${label}.`,
+          from: to,
+        },
+      });
+    }
+  };
+
+  const handleCartClick = (e) => {
+    if (!isAuthenticated) {
+      e.preventDefault();
+      navigate('/login', {
+        state: {
+          message: 'Please sign in first to view your cart and checkout.',
+          from: '/cart',
+        },
+      });
     }
   };
 
@@ -129,6 +154,7 @@ const Navbar = ({ onSearchClick }) => {
                 <Link
                   key={link.to}
                   to={link.to}
+                  onClick={(e) => handleNavLinkClick(e, link.to, link.label)}
                   className={`text-sm font-semibold transition-colors flex items-center gap-1.5 ${
                     isActive ? 'text-primary font-bold' : 'text-text hover:text-primary'
                   }`}
@@ -140,73 +166,85 @@ const Navbar = ({ onSearchClick }) => {
             })}
           </nav>
 
-          {/* Right Action Icons: Cart & Profile */}
+          {/* Right Action Icons: Cart & Profile or Sign In */}
           <div className="flex items-center gap-3 shrink-0">
-            {/* Desktop Cart Button */}
-            <Link
-              to="/cart"
-              className="relative flex items-center gap-2 px-3.5 py-2 rounded-xl bg-accent hover:bg-accent-hover text-text font-bold text-xs shadow-soft transition-colors"
-            >
-              <ShoppingBag className="w-4 h-4 text-primary" />
-              <span className="hidden sm:inline">Cart</span>
-              {totalItemCount > 0 && (
-                <span className="px-1.5 py-0.5 rounded-full bg-primary text-white text-[11px] font-mono">
-                  {totalItemCount}
-                </span>
-              )}
-            </Link>
-
-            {/* Profile Dropdown */}
-            <div className="relative">
-              <button
-                type="button"
-                onClick={() => setProfileOpen(!profileOpen)}
-                className="w-10 h-10 rounded-xl bg-surface-alt border border-border hover:bg-border/60 flex items-center justify-center text-text transition-colors"
+            {!isAuthenticated ? (
+              <Link
+                to="/login"
+                className="flex items-center gap-2 px-4 py-2 rounded-xl bg-primary hover:bg-primary-hover text-white font-bold text-xs shadow-soft transition-colors"
               >
-                <User className="w-5 h-5 text-primary" />
-              </button>
+                <LogIn className="w-4 h-4 text-accent" />
+                <span>Sign In</span>
+              </Link>
+            ) : (
+              <>
+                {/* Desktop Cart Button */}
+                <Link
+                  to="/cart"
+                  onClick={handleCartClick}
+                  className="relative flex items-center gap-2 px-3.5 py-2 rounded-xl bg-accent hover:bg-accent-hover text-text font-bold text-xs shadow-soft transition-colors"
+                >
+                  <ShoppingBag className="w-4 h-4 text-primary" />
+                  <span className="hidden sm:inline">Cart</span>
+                  {totalItemCount > 0 && (
+                    <span className="px-1.5 py-0.5 rounded-full bg-primary text-white text-[11px] font-mono">
+                      {totalItemCount}
+                    </span>
+                  )}
+                </Link>
 
-              {profileOpen && (
-                <>
-                  <div className="fixed inset-0 z-10" onClick={() => setProfileOpen(false)} />
-                  <div className="absolute right-0 mt-2 w-56 bg-white rounded-xl shadow-card border border-border p-2 z-20 animate-fadeIn">
-                    <div className="px-3 py-2 border-b border-border mb-1.5">
-                      <p className="font-bold text-sm text-text truncate">{user?.name || 'Student'}</p>
-                      <p className="text-xs font-mono text-text-muted">{user?.rollNumber || user?.email}</p>
-                    </div>
-                    <Link
-                      to="/profile"
-                      onClick={() => setProfileOpen(false)}
-                      className="w-full text-left px-3 py-2 rounded-lg text-xs font-semibold text-text hover:bg-surface-alt flex items-center gap-2"
-                    >
-                      <User className="w-4 h-4 text-text-muted" />
-                      <span>My Profile</span>
-                    </Link>
-                    <Link
-                      to="/orders"
-                      onClick={() => setProfileOpen(false)}
-                      className="w-full text-left px-3 py-2 rounded-lg text-xs font-semibold text-text hover:bg-surface-alt flex items-center gap-2"
-                    >
-                      <Clock className="w-4 h-4 text-text-muted" />
-                      <span>My Orders</span>
-                    </Link>
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setProfileOpen(false);
-                        logout();
-                        navigate('/login');
-                      }}
-                      className="w-full text-left px-3 py-2 rounded-lg text-xs font-semibold text-danger hover:bg-danger/10 flex items-center gap-2 mt-1 border-t border-border pt-2"
-                    >
-                      <LogOut className="w-4 h-4 text-danger" />
-                      <span>Sign Out</span>
-                    </button>
-                  </div>
-                </>
-              )}
-            </div>
+                {/* Profile Dropdown */}
+                <div className="relative">
+                  <button
+                    type="button"
+                    onClick={() => setProfileOpen(!profileOpen)}
+                    className="w-10 h-10 rounded-xl bg-surface-alt border border-border hover:bg-border/60 flex items-center justify-center text-text transition-colors"
+                  >
+                    <User className="w-5 h-5 text-primary" />
+                  </button>
 
+                  {profileOpen && (
+                    <>
+                      <div className="fixed inset-0 z-10" onClick={() => setProfileOpen(false)} />
+                      <div className="absolute right-0 mt-2 w-56 bg-white rounded-xl shadow-card border border-border p-2 z-20 animate-fadeIn">
+                        <div className="px-3 py-2 border-b border-border mb-1.5">
+                          <p className="font-bold text-sm text-text truncate">{user?.name || 'Student'}</p>
+                          <p className="text-xs font-mono text-text-muted">{user?.rollNumber || user?.email}</p>
+                        </div>
+                        <Link
+                          to="/profile"
+                          onClick={() => setProfileOpen(false)}
+                          className="w-full text-left px-3 py-2 rounded-lg text-xs font-semibold text-text hover:bg-surface-alt flex items-center gap-2"
+                        >
+                          <User className="w-4 h-4 text-text-muted" />
+                          <span>My Profile</span>
+                        </Link>
+                        <Link
+                          to="/orders"
+                          onClick={() => setProfileOpen(false)}
+                          className="w-full text-left px-3 py-2 rounded-lg text-xs font-semibold text-text hover:bg-surface-alt flex items-center gap-2"
+                        >
+                          <Clock className="w-4 h-4 text-text-muted" />
+                          <span>My Orders</span>
+                        </Link>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setProfileOpen(false);
+                            logout();
+                            navigate('/login');
+                          }}
+                          className="w-full text-left px-3 py-2 rounded-lg text-xs font-semibold text-danger hover:bg-danger/10 flex items-center gap-2 mt-1 border-t border-border pt-2"
+                        >
+                          <LogOut className="w-4 h-4 text-danger" />
+                          <span>Sign Out</span>
+                        </button>
+                      </div>
+                    </>
+                  )}
+                </div>
+              </>
+            )}
           </div>
 
         </div>

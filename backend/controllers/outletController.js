@@ -24,6 +24,7 @@ const getFoodCourts = (req, res) => {
 const getAllOutlets = (req, res) => {
   const { category, search, location } = req.query;
   let outlets = db.getOutlets();
+  const allMenuItems = db.getMenuItems();
 
   if (category && category !== 'All') {
     outlets = outlets.filter(o => 
@@ -32,23 +33,54 @@ const getAllOutlets = (req, res) => {
     );
   }
 
+  // Pre-index dishes by outlet
+  const dishesByOutlet = {};
+  allMenuItems.forEach(dish => {
+    if (!dishesByOutlet[dish.outletId]) {
+      dishesByOutlet[dish.outletId] = [];
+    }
+    dishesByOutlet[dish.outletId].push(dish);
+  });
+
   if (search) {
-    const q = search.toLowerCase();
-    outlets = outlets.filter(o =>
-      o.name.toLowerCase().includes(q) ||
-      o.location.toLowerCase().includes(q) ||
-      (o.cuisine && o.cuisine.toLowerCase().includes(q))
-    );
+    const q = search.toLowerCase().trim();
+    outlets = outlets.filter(o => {
+      const matchName = o.name.toLowerCase().includes(q);
+      const matchLoc = o.location.toLowerCase().includes(q);
+      const matchCuisine = (o.cuisine && o.cuisine.toLowerCase().includes(q));
+      const matchCategory = (o.category && o.category.toLowerCase().includes(q));
+
+      const outletDishes = dishesByOutlet[o.id] || [];
+      const hasMatchingDish = outletDishes.some(d =>
+        d.name.toLowerCase().includes(q) ||
+        (d.category && d.category.toLowerCase().includes(q)) ||
+        (d.description && d.description.toLowerCase().includes(q))
+      );
+
+      return matchName || matchLoc || matchCuisine || matchCategory || hasMatchingDish;
+    });
   }
 
-  // Attach dynamic walking times from selected location
+  // Attach dynamic walking times, matching dishes, and sample dishes
+  const q = search ? search.toLowerCase().trim() : null;
   const enriched = outlets.map(o => {
     const walkMins = location ? getWalkingTime(location, o.campusSpot) : 5;
+    const outletDishes = dishesByOutlet[o.id] || [];
+    const matchingDishes = q
+      ? outletDishes.filter(d =>
+          d.name.toLowerCase().includes(q) ||
+          (d.category && d.category.toLowerCase().includes(q)) ||
+          (d.description && d.description.toLowerCase().includes(q))
+        )
+      : [];
+
     return {
       ...o,
       walkMins,
       // Queue status text
       queueStatus: o.queueCount <= 4 ? 'Low' : o.queueCount <= 9 ? 'Medium' : 'High',
+      matchingDishes,
+      sampleDishes: outletDishes.slice(0, 4).map(d => d.name),
     };
   });
 
@@ -56,6 +88,68 @@ const getAllOutlets = (req, res) => {
     success: true,
     count: enriched.length,
     data: enriched,
+  });
+};
+
+// @desc    Full unified search across both outlets and food items
+// @route   GET /api/search
+// @access  Public
+const searchCampusFood = (req, res) => {
+  const q = (req.query.q || req.query.search || '').toLowerCase().trim();
+  const allOutlets = db.getOutlets();
+  const allDishes = db.getMenuItems();
+
+  if (!q) {
+    return res.status(200).json({
+      success: true,
+      query: '',
+      countDishes: 0,
+      countOutlets: 0,
+      dishes: [],
+      outlets: [],
+    });
+  }
+
+  // Find matching dishes
+  const matchingDishes = allDishes.filter(d =>
+    d.name.toLowerCase().includes(q) ||
+    (d.category && d.category.toLowerCase().includes(q)) ||
+    (d.description && d.description.toLowerCase().includes(q))
+  ).map(d => {
+    const outlet = allOutlets.find(o => o.id === d.outletId);
+    return {
+      ...d,
+      outletName: outlet ? outlet.name : 'Campus Outlet',
+      outletLocation: outlet ? outlet.location : '',
+      outletCampusSpot: outlet ? outlet.campusSpot : '',
+      outletIsOpen: outlet ? outlet.isOpen && !outlet.isPaused : true,
+    };
+  });
+
+  const outletIdsWithDishes = new Set(matchingDishes.map(d => d.outletId));
+
+  // Find matching outlets (by name, cuisine, category, location, or serving matching dish)
+  const matchingOutlets = allOutlets.filter(o =>
+    o.name.toLowerCase().includes(q) ||
+    (o.location && o.location.toLowerCase().includes(q)) ||
+    (o.cuisine && o.cuisine.toLowerCase().includes(q)) ||
+    (o.category && o.category.toLowerCase().includes(q)) ||
+    outletIdsWithDishes.has(o.id)
+  ).map(o => ({
+    ...o,
+    walkMins: o.walkMins ?? 5,
+    prepMins: o.prepMins ?? 8,
+    queueCount: o.queueCount ?? 3,
+    matchingDishes: matchingDishes.filter(d => d.outletId === o.id),
+  }));
+
+  res.status(200).json({
+    success: true,
+    query: q,
+    countDishes: matchingDishes.length,
+    countOutlets: matchingOutlets.length,
+    dishes: matchingDishes,
+    outlets: matchingOutlets,
   });
 };
 
@@ -339,6 +433,7 @@ module.exports = {
   getFoodCourts,
   getAllOutlets,
   getOutletById,
+  searchCampusFood,
   updateItemStock,
   pauseOutlet,
   resumeOutlet,

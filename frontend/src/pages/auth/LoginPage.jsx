@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
-import { UtensilsCrossed, ArrowRight, UserCheck, Lock, Mail, ShieldAlert } from 'lucide-react';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
+import { UtensilsCrossed, ArrowRight, UserCheck, Lock, Mail, ShieldAlert, Info } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import Button from '../../components/ui/Button';
 
 const LoginPage = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const promptMessage = location.state?.message || '';
+  const redirectTarget = location.state?.from || null;
   const { login, isAuthenticated, role } = useAuth();
 
   const [identifier, setIdentifier] = useState('');
@@ -13,16 +16,18 @@ const LoginPage = () => {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
-  // If already authenticated, route automatically based on role
+  // If already authenticated, route automatically based on role or return path
   React.useEffect(() => {
     if (isAuthenticated) {
       if (role === 'vendor') {
         navigate('/vendor', { replace: true });
+      } else if (redirectTarget) {
+        navigate(redirectTarget, { replace: true });
       } else {
         navigate('/home', { replace: true });
       }
     }
-  }, [isAuthenticated, role, navigate]);
+  }, [isAuthenticated, role, navigate, redirectTarget]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -40,6 +45,8 @@ const LoginPage = () => {
     if (res.success) {
       if (res.user.role === 'vendor') {
         navigate('/vendor', { replace: true });
+      } else if (redirectTarget) {
+        navigate(redirectTarget, { replace: true });
       } else {
         navigate('/home', { replace: true });
       }
@@ -82,6 +89,16 @@ const LoginPage = () => {
               Enter your student roll number or canteen vendor email
             </p>
           </div>
+
+          {promptMessage && (
+            <div className="mb-5 p-3.5 bg-accent/20 border border-accent/60 rounded-xl text-xs font-semibold text-text flex items-start gap-2.5 animate-fadeIn">
+              <Info className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+              <div>
+                <span className="font-bold text-primary">Sign In First: </span>
+                {promptMessage}
+              </div>
+            </div>
+          )}
 
           {error && (
             <div className="mb-5 p-3.5 bg-danger/10 border border-danger/30 rounded-xl text-xs font-medium text-danger flex items-start gap-2 animate-fadeIn">

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import axios from 'axios';
 import { 
   Sparkles, 
@@ -10,11 +10,13 @@ import {
   ArrowRight,
   ChefHat,
   UtensilsCrossed, 
-  AlertCircle
+  AlertCircle,
+  X
 } from 'lucide-react';
 import { useLocation } from '../../context/LocationContext';
 import { useAuth } from '../../context/AuthContext';
 import OutletCard from '../../components/cards/OutletCard';
+import DishImage from '../../components/ui/DishImage';
 import Chip from '../../components/ui/Chip';
 import Skeleton, { CardSkeleton } from '../../components/ui/Skeleton';
 import EmptyState from '../../components/ui/EmptyState';
@@ -22,16 +24,27 @@ import { API_BASE } from '../../config/api';
 
 const HomePage = () => {
   const navigate = useNavigate();
-  const { user } = useAuth();
+  const { user, isAuthenticated } = useAuth();
   const { selectedLocation } = useLocation();
 
   const [foodCourts, setFoodCourts] = useState([]);
   const [outlets, setOutlets] = useState([]);
   const [activeOrder, setActiveOrder] = useState(null);
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchQuery, setSearchQuery] = useState(searchParams.get('search') || '');
+  const [searchResults, setSearchResults] = useState({ dishes: [], outlets: [] });
+  const [isSearching, setIsSearching] = useState(false);
   const [selectedCourtFilter, setSelectedCourtFilter] = useState('All');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  // Sync searchQuery with searchParams if query string changes
+  useEffect(() => {
+    const q = searchParams.get('search') || '';
+    if (q !== searchQuery) {
+      setSearchQuery(q);
+    }
+  }, [searchParams]);
 
   // Fetch Outlets, Food Courts and Active Orders
   useEffect(() => {
@@ -70,30 +83,70 @@ const HomePage = () => {
     return () => { isMounted = false; };
   }, [selectedLocation, user]);
 
+  // Live real-time search across dishes and outlets
+  useEffect(() => {
+    if (!searchQuery.trim()) {
+      setSearchResults({ dishes: [], outlets: [] });
+      setIsSearching(false);
+      return;
+    }
+
+    const timer = setTimeout(async () => {
+      try {
+        setIsSearching(true);
+        const res = await axios.get(`${API_BASE}/search?q=${encodeURIComponent(searchQuery.trim())}`);
+        if (res.data.success) {
+          setSearchResults({
+            dishes: res.data.dishes || [],
+            outlets: res.data.outlets || [],
+          });
+        }
+      } catch (err) {
+        console.error('Search query error:', err);
+      } finally {
+        setIsSearching(false);
+      }
+    }, 200);
+
+    return () => clearTimeout(timer);
+  }, [searchQuery]);
+
   const handleSearchSubmit = (e) => {
     e.preventDefault();
     if (searchQuery.trim()) {
-      const el = document.getElementById('campus-outlets-section');
+      const el = document.getElementById('search-results-section') || document.getElementById('campus-outlets-section');
       if (el) {
         el.scrollIntoView({ behavior: 'smooth' });
-      } else {
-        navigate(`/outlets?search=${encodeURIComponent(searchQuery.trim())}`);
       }
     }
   };
 
-  // Filter outlets by food court & search
+  const handleProtectedAction = (e, path, message) => {
+    if (!isAuthenticated) {
+      e.preventDefault();
+      navigate('/login', {
+        state: { message, from: path },
+      });
+    }
+  };
+
+  const handleDishClick = (dish) => {
+    if (!isAuthenticated) {
+      navigate('/login', {
+        state: {
+          message: `Please sign in first to order ${dish.name} from ${dish.outletName}.`,
+          from: `/outlet/${dish.outletId}`,
+        },
+      });
+    } else {
+      navigate(`/outlet/${dish.outletId}`);
+    }
+  };
+
+  // Filter outlets by food court when not searching
   const filteredOutlets = outlets.filter(o => {
     if (selectedCourtFilter !== 'All' && o.foodCourtId !== selectedCourtFilter) {
       return false;
-    }
-    if (searchQuery.trim()) {
-      const q = searchQuery.toLowerCase();
-      return (
-        o.name.toLowerCase().includes(q) || 
-        (o.cuisine && o.cuisine.toLowerCase().includes(q)) ||
-        (o.category && o.category.toLowerCase().includes(q))
-      );
     }
     return true;
   });
@@ -198,6 +251,7 @@ const HomePage = () => {
 
               <Link
                 to="/break-planner"
+                onClick={(e) => handleProtectedAction(e, '/break-planner', 'Please sign in first to use the Smart Break-Time Planner.')}
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white hover:bg-surface-alt text-text border border-border font-mono font-bold text-xs uppercase tracking-wider transition-colors shadow-soft"
               >
                 <Clock className="w-4 h-4 text-accent-hover" />
@@ -209,6 +263,7 @@ const HomePage = () => {
             <div className="pt-1">
               <Link
                 to="/vendor"
+                onClick={(e) => handleProtectedAction(e, '/vendor', 'Please sign in with your vendor account to access the kitchen terminal.')}
                 className="inline-flex items-center gap-2 text-xs font-mono text-text-muted hover:text-primary transition-colors group"
               >
                 <ChefHat className="w-4 h-4 text-accent-hover group-hover:scale-110 transition-transform" />
@@ -240,7 +295,7 @@ const HomePage = () => {
               {/* Main Showcase Image Card */}
               <div className="relative rounded-2xl overflow-hidden border border-border shadow-card bg-surface-alt aspect-[4/3] group">
                 <img
-                  src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80"
+                  src="/images/hero_cafe.webp"
                   alt="Tech Cafe & Central Canteen"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -282,104 +337,220 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* 3. Food Court Selector Chips */}
-      <div id="campus-outlets-section" className="space-y-4 pt-4 border-t border-border">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-          <div>
-            <h2 className="font-serif font-bold text-2xl text-text">
-              Explore Campus Food Hubs
-            </h2>
-            <p className="text-xs text-text-muted mt-0.5">
-              Select a food court zone to browse kitchens and canteens
-            </p>
-          </div>
-          <span className="text-xs font-mono font-bold text-primary shrink-0">
-            30 Outlets Across LPU
-          </span>
-        </div>
-
-        <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
-          <Chip
-            active={selectedCourtFilter === 'All'}
-            onClick={() => setSelectedCourtFilter('All')}
-          >
-            All Food Courts
-          </Chip>
-          {foodCourts.map(court => (
-            <Chip
-              key={court.id}
-              active={selectedCourtFilter === court.id}
-              onClick={() => setSelectedCourtFilter(court.id)}
+      {/* 3. Search Results or Full Campus Outlets Section */}
+      {searchQuery.trim() ? (
+        /* Dynamic Search Results: Matching Food Items + Serving Outlets */
+        <div id="search-results-section" className="space-y-8 pt-4 border-t border-border animate-fadeIn">
+          {/* Search Summary Header */}
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 bg-white rounded-2xl border border-border shadow-soft">
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-accent animate-pulse" />
+                <h2 className="font-serif font-bold text-xl text-text">
+                  Food Search Results for <span className="text-primary italic font-normal">"{searchQuery}"</span>
+                </h2>
+              </div>
+              <p className="text-xs text-text-muted mt-0.5">
+                {isSearching 
+                  ? 'Searching campus kitchens...' 
+                  : `Found ${searchResults.dishes.length} food item${searchResults.dishes.length === 1 ? '' : 's'} across ${searchResults.outlets.length} campus canteen${searchResults.outlets.length === 1 ? '' : 's'}`
+                }
+              </p>
+            </div>
+            <button
+              type="button"
+              onClick={() => setSearchQuery('')}
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl border border-border hover:bg-surface-alt text-xs font-mono font-bold text-primary transition-colors shrink-0 self-start sm:self-auto"
             >
-              {court.shortName}
-            </Chip>
-          ))}
-        </div>
-      </div>
+              <X className="w-3.5 h-3.5" />
+              <span>Clear Search</span>
+            </button>
+          </div>
 
-      {/* 4. Outlets Grouped by Food Court */}
-      {loading ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[1, 2, 3, 4, 5, 6].map(i => (
-            <CardSkeleton key={i} />
-          ))}
-        </div>
-      ) : error ? (
-        <EmptyState
-          icon={AlertCircle}
-          title="Could not connect to UniBites API"
-          description={error}
-          actionText="Retry Connection"
-          onAction={() => window.location.reload()}
-        />
-      ) : filteredOutlets.length === 0 ? (
-        <EmptyState
-          title="No food outlets found"
-          description="Try selecting a different food court or clear your search filter."
-          actionText="View All Outlets"
-          onAction={() => {
-            setSelectedCourtFilter('All');
-            setSearchQuery('');
-          }}
-        />
-      ) : selectedCourtFilter !== 'All' ? (
-        /* Flat Grid when a specific court is selected */
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredOutlets.map(outlet => (
-            <OutletCard key={outlet.id} outlet={outlet} />
-          ))}
+          {/* Section A: Matching Food Items Grid */}
+          {searchResults.dishes.length > 0 && (
+            <div className="space-y-4">
+              <div className="flex items-center justify-between">
+                <h3 className="font-serif font-bold text-lg text-text flex items-center gap-2">
+                  <span>Matching Food Items</span>
+                  <span className="px-2 py-0.5 rounded-full bg-accent text-text text-xs font-mono font-bold">
+                    {searchResults.dishes.length} Dishes
+                  </span>
+                </h3>
+                <span className="text-xs text-text-muted font-mono hidden sm:inline">
+                  Click any dish to order ahead
+                </span>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                {searchResults.dishes.map((dish) => (
+                  <div
+                    key={dish.id}
+                    onClick={() => handleDishClick(dish)}
+                    className="group cursor-pointer bg-white rounded-2xl border border-border hover:border-primary/50 transition-all p-3 shadow-card hover:shadow-soft flex flex-col justify-between"
+                  >
+                    <div>
+                      <div className="relative aspect-square w-full rounded-xl overflow-hidden bg-surface-alt mb-2.5">
+                        <DishImage
+                          src={dish.image}
+                          alt={dish.name}
+                          name={dish.name}
+                          category={dish.category}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                        <span className="absolute bottom-2 right-2 px-2 py-0.5 rounded-lg bg-text/85 backdrop-blur-sm text-white font-mono font-bold text-xs">
+                          ₹{dish.price}
+                        </span>
+                      </div>
+                      <h4 className="font-serif font-bold text-sm text-text group-hover:text-primary transition-colors line-clamp-1">
+                        {dish.name}
+                      </h4>
+                      <p className="text-[11px] font-mono text-primary font-bold mt-0.5 line-clamp-1">
+                        📍 {dish.outletName}
+                      </p>
+                      <p className="text-xs text-text-muted mt-1 line-clamp-2">
+                        {dish.description}
+                      </p>
+                    </div>
+
+                    <div className="mt-3 pt-2.5 border-t border-border flex items-center justify-between">
+                      <span className="text-[10px] font-mono text-text-muted uppercase">
+                        {dish.category}
+                      </span>
+                      <span className="text-xs font-bold text-primary flex items-center gap-0.5 group-hover:translate-x-0.5 transition-transform">
+                        Order Ahead <ChevronRight className="w-3.5 h-3.5" />
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Section B: Campus Outlets Serving "{searchQuery}" */}
+          <div className="space-y-4">
+            <h3 className="font-serif font-bold text-lg text-text flex items-center gap-2">
+              <span>Campus Outlets Serving "{searchQuery}"</span>
+              <span className="px-2 py-0.5 rounded-full bg-primary text-white text-xs font-mono font-bold">
+                {searchResults.outlets.length} Outlets
+              </span>
+            </h3>
+
+            {searchResults.outlets.length === 0 ? (
+              <EmptyState
+                title={`No outlets found for "${searchQuery}"`}
+                description="Try searching for common campus favorites like noodles, dosa, burger, waffle, coffee, pasta, thali, or pizza."
+                actionText="View All 30 Campus Outlets"
+                onAction={() => setSearchQuery('')}
+              />
+            ) : (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {searchResults.outlets.map((outlet) => (
+                  <OutletCard key={outlet.id} outlet={outlet} />
+                ))}
+              </div>
+            )}
+          </div>
         </div>
       ) : (
-        /* Grouped Sections by Food Court when 'All' is selected */
-        <div className="space-y-12">
-          {foodCourts.map(court => {
-            const courtOutlets = outlets.filter(o => o.foodCourtId === court.id);
-            if (courtOutlets.length === 0) return null;
+        /* Standard Food Hubs & Outlets Directory when not searching */
+        <div id="campus-outlets-section" className="space-y-6 pt-4 border-t border-border">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <h2 className="font-serif font-bold text-2xl text-text">
+                Explore Campus Food Hubs
+              </h2>
+              <p className="text-xs text-text-muted mt-0.5">
+                Select a food court zone to browse kitchens and canteens
+              </p>
+            </div>
+            <span className="text-xs font-mono font-bold text-primary shrink-0">
+              30 Outlets Across LPU
+            </span>
+          </div>
 
-            return (
-              <section key={court.id} className="space-y-4">
-                <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 pb-2 border-b border-border">
-                  <div>
-                    <h3 className="font-serif font-bold text-xl text-text">
-                      {court.name}
-                    </h3>
-                    <p className="text-xs text-text-muted mt-0.5">
-                      {court.description}
-                    </p>
-                  </div>
-                  <span className="text-xs font-mono font-bold text-primary shrink-0">
-                    {courtOutlets.length} Outlets • {court.badge}
-                  </span>
-                </div>
+          <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
+            <Chip
+              active={selectedCourtFilter === 'All'}
+              onClick={() => setSelectedCourtFilter('All')}
+            >
+              All Food Courts
+            </Chip>
+            {foodCourts.map(court => (
+              <Chip
+                key={court.id}
+                active={selectedCourtFilter === court.id}
+                onClick={() => setSelectedCourtFilter(court.id)}
+              >
+                {court.shortName}
+              </Chip>
+            ))}
+          </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {courtOutlets.map(outlet => (
-                    <OutletCard key={outlet.id} outlet={outlet} />
-                  ))}
-                </div>
-              </section>
-            );
-          })}
+          {loading ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[1, 2, 3, 4, 5, 6].map(i => (
+                <CardSkeleton key={i} />
+              ))}
+            </div>
+          ) : error ? (
+            <EmptyState
+              icon={AlertCircle}
+              title="Could not connect to UniBites API"
+              description={error}
+              actionText="Retry Connection"
+              onAction={() => window.location.reload()}
+            />
+          ) : filteredOutlets.length === 0 ? (
+            <EmptyState
+              title="No food outlets found"
+              description="Try selecting a different food court or clear your search filter."
+              actionText="View All Outlets"
+              onAction={() => {
+                setSelectedCourtFilter('All');
+                setSearchQuery('');
+              }}
+            />
+          ) : selectedCourtFilter !== 'All' ? (
+            /* Flat Grid when a specific court is selected */
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {filteredOutlets.map(outlet => (
+                <OutletCard key={outlet.id} outlet={outlet} />
+              ))}
+            </div>
+          ) : (
+            /* Grouped Sections by Food Court when 'All' is selected */
+            <div className="space-y-12">
+              {foodCourts.map(court => {
+                const courtOutlets = outlets.filter(o => o.foodCourtId === court.id);
+                if (courtOutlets.length === 0) return null;
+
+                return (
+                  <section key={court.id} className="space-y-4">
+                    <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 pb-2 border-b border-border">
+                      <div>
+                        <h3 className="font-serif font-bold text-xl text-text">
+                          {court.name}
+                        </h3>
+                        <p className="text-xs text-text-muted mt-0.5">
+                          {court.description}
+                        </p>
+                      </div>
+                      <span className="text-xs font-mono font-bold text-primary shrink-0">
+                        {courtOutlets.length} Outlets • {court.badge}
+                      </span>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                      {courtOutlets.map(outlet => (
+                        <OutletCard key={outlet.id} outlet={outlet} />
+                      ))}
+                    </div>
+                  </section>
+                );
+              })}
+            </div>
+          )}
         </div>
       )}
 

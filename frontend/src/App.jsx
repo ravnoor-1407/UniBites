@@ -46,13 +46,12 @@ const VendorRoute = ({ children }) => {
   return children;
 };
 
-// Root index redirect
-const RootRedirect = () => {
+// Main Landing & Home Route (Accessible directly by visitors and students)
+const HomeOrVendorRedirect = () => {
   const { isAuthenticated, role, loading } = useAuth();
   if (loading) return <PageLoading />;
-  if (!isAuthenticated) return <Navigate to="/login" replace />;
-  if (role === 'vendor') return <Navigate to="/vendor" replace />;
-  return <Navigate to="/home" replace />;
+  if (isAuthenticated && role === 'vendor') return <Navigate to="/vendor" replace />;
+  return <HomePage />;
 };
 
 function App() {
@@ -70,22 +69,15 @@ function App() {
       {/* Main Content Area */}
       <main className="flex-1">
         <Routes>
-          {/* Index Route */}
-          <Route path="/" element={<RootRedirect />} />
+          {/* Main Landing & Home Routes */}
+          <Route path="/" element={<HomeOrVendorRedirect />} />
+          <Route path="/home" element={<HomeOrVendorRedirect />} />
 
           {/* Auth Routes */}
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
 
           {/* Protected Student Routes */}
-          <Route
-            path="/home"
-            element={
-              <StudentRoute>
-                <HomePage />
-              </StudentRoute>
-            }
-          />
           <Route
             path="/break-planner"
             element={
@@ -94,14 +86,7 @@ function App() {
               </StudentRoute>
             }
           />
-          <Route
-            path="/outlets"
-            element={
-              <StudentRoute>
-                <OutletsListPage />
-              </StudentRoute>
-            }
-          />
+          <Route path="/outlets" element={<OutletsListPage />} />
           <Route
             path="/outlet/:id"
             element={
