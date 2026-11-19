@@ -93,8 +93,8 @@ if (fs.existsSync(frontendDist)) {
 app.use(notFound);
 app.use(errorHandler);
 
-// Start Server (only if not in test mode and not in serverless runtime)
-if (process.env.NODE_ENV !== 'test' && !process.env.VERCEL) {
+// Start Server (only if not in test mode)
+if (process.env.NODE_ENV !== 'test') {
   server.listen(PORT, () => {
     console.log(`\n==================================================`);
     console.log(`🚀 UniBites Server running on http://localhost:${PORT}`);
@@ -103,4 +103,6 @@ if (process.env.NODE_ENV !== 'test' && !process.env.VERCEL) {
   });
 }
 
-module.exports = { app, server };
+module.exports = app;
+module.exports.app = app;
+module.exports.server = server;
