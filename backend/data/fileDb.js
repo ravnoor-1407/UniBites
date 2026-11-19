@@ -27,6 +27,13 @@ class FileDatabase {
 
   init() {
     try {
+      const tmpPath = path.join('/tmp', 'unibites_db.json');
+      if (fs.existsSync(tmpPath)) {
+        const raw = fs.readFileSync(tmpPath, 'utf-8');
+        this.data = JSON.parse(raw);
+        console.log(`✅ Loaded database from temporary storage ${tmpPath}`);
+        return;
+      }
       if (fs.existsSync(DB_PATH)) {
         const raw = fs.readFileSync(DB_PATH, 'utf-8');
         this.data = JSON.parse(raw);
@@ -151,7 +158,13 @@ class FileDatabase {
     try {
       fs.writeFileSync(DB_PATH, JSON.stringify(this.data, null, 2), 'utf-8');
     } catch (err) {
-      console.error('Failed to save DB to disk:', err.message);
+      // Fallback for read-only serverless filesystems (e.g. Vercel)
+      try {
+        const tmpPath = path.join('/tmp', 'unibites_db.json');
+        fs.writeFileSync(tmpPath, JSON.stringify(this.data, null, 2), 'utf-8');
+      } catch (e) {
+        // Safe in-memory retention
+      }
     }
   }
 

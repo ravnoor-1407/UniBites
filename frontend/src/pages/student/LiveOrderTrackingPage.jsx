@@ -39,24 +39,36 @@ const LiveOrderTrackingPage = () => {
   // Fetch order
   useEffect(() => {
     let isMounted = true;
-    const fetchOrder = async () => {
+    const fetchOrder = async (isInitial = false) => {
       try {
-        setLoading(true);
+        if (isInitial) setLoading(true);
         const res = await axios.get(`${API_BASE}/orders/${id}`);
         if (isMounted && res.data.success) {
-          setOrder(res.data.data);
-          setLoading(false);
+          setOrder(prev => {
+            const next = res.data.data;
+            if (prev && prev.status !== next.status && next.status === 'Ready for Pickup') {
+              playReadyChime();
+            }
+            return next;
+          });
+          if (isInitial) setLoading(false);
         }
       } catch (err) {
-        if (isMounted) {
+        if (isMounted && isInitial) {
           setError('Could not locate order details.');
           setLoading(false);
         }
       }
     };
 
-    fetchOrder();
-    return () => { isMounted = false; };
+    fetchOrder(true);
+    // 4-second polling fallback guarantees updates even on serverless platforms (e.g. Vercel)
+    const pollInterval = setInterval(() => fetchOrder(false), 4000);
+
+    return () => {
+      isMounted = false;
+      clearInterval(pollInterval);
+    };
   }, [id]);
 
   // Connect to Socket.IO for real-time live updates

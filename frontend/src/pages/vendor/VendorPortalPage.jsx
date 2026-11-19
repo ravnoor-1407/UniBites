@@ -101,7 +101,13 @@ const VendorPortalPage = () => {
   };
 
   useEffect(() => {
-    if (outletId) fetchAllData();
+    if (!outletId) return;
+    fetchAllData();
+    // 5-second polling fallback guarantees new orders arrive even on serverless platforms (e.g. Vercel)
+    const pollInterval = setInterval(() => {
+      fetchAllData();
+    }, 5000);
+    return () => clearInterval(pollInterval);
   }, [outletId]);
 
   // 2. Real-Time Socket Connection for Vendor Kitchen
