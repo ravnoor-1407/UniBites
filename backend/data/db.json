@@ -123,7 +123,7 @@
       "maxOrdersPer5Min": 15,
       "totalSeats": 0,
       "occupiedSeats": 0,
-      "queueCount": 10,
+      "queueCount": 11,
       "image": "https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=800&q=80",
       "coverImage": "https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=800&q=80"
     },
@@ -879,7 +879,7 @@
       "prepMins": 6,
       "isVeg": true,
       "image": "/images/menu/belgian_chocolate_waffle.webp",
-      "isAvailable": false,
+      "isAvailable": true,
       "imageKey": "belgian_chocolate_waffle"
     },
     {
@@ -907,7 +907,7 @@
       "prepMins": 6,
       "isVeg": true,
       "image": "/images/menu/belgian_chocolate_waffle.webp",
-      "isAvailable": false,
+      "isAvailable": true,
       "imageKey": "belgian_chocolate_waffle"
     },
     {
@@ -963,7 +963,7 @@
       "prepMins": 4,
       "isVeg": true,
       "image": "/images/menu/caramel_stroopwafel.webp",
-      "isAvailable": false,
+      "isAvailable": true,
       "imageKey": "caramel_stroopwafel"
     },
     {
@@ -1019,7 +1019,7 @@
       "prepMins": 6,
       "isVeg": true,
       "image": "/images/menu/red_velvet_waffle.webp",
-      "isAvailable": false,
+      "isAvailable": true,
       "imageKey": "red_velvet_waffle"
     },
     {
@@ -5981,6 +5981,53 @@
   ],
   "orders": [
     {
+      "id": "ORD-593105",
+      "token": "UB-109",
+      "status": "Collected",
+      "platformFee": 5,
+      "createdAt": "2026-11-19T16:59:53.105Z",
+      "orderedAt": "10:29 PM",
+      "outletId": "outlet-1",
+      "outletName": "The Belgian Waffle Co.",
+      "studentRoll": "12204891",
+      "studentName": "Aarav Sharma",
+      "studentPhone": "9876543210",
+      "items": [
+        {
+          "id": "dish-001",
+          "name": "Belgian Chocolate Overload Waffle",
+          "price": 145,
+          "quantity": 2,
+          "isVeg": true,
+          "prepMins": 6,
+          "addedBy": "Student"
+        },
+        {
+          "id": "dish-002",
+          "name": "Nutella Hazelnut Crunch Waffle",
+          "price": 165,
+          "quantity": 1,
+          "isVeg": true,
+          "prepMins": 6,
+          "addedBy": "Student"
+        }
+      ],
+      "subtotal": 455,
+      "totalAmount": 460,
+      "diningMode": "Takeaway",
+      "pickupSlot": "Immediate (Next available)",
+      "paymentMethod": "UPI (Simulated)",
+      "paymentStatus": "Paid",
+      "isGroupOrder": false,
+      "groupCode": null,
+      "selectedSeats": [],
+      "prepMins": 6,
+      "updatedAt": "2026-11-19T16:59:53.169Z",
+      "readyAt": "10:29 PM",
+      "paymentMethodReceived": "UPI",
+      "collectedAt": "10:29 PM"
+    },
+    {
       "id": "ORD-255175",
       "token": "UB-108",
       "status": "Collected",
@@ -6334,7 +6381,18 @@
       "collectedAt": "08:42 PM"
     }
   ],
-  "seatHolds": [],
+  "seatHolds": [
+    {
+      "id": "hold-1795107593259",
+      "outletId": "outlet-canteen-b14",
+      "seatIds": [
+        "S-14"
+      ],
+      "studentRoll": "GUEST",
+      "createdAt": "2026-11-19T16:59:53.259Z",
+      "expiresAt": "2026-11-19T17:14:53.259Z"
+    }
+  ],
   "groups": [
     {
       "groupCode": "UGS8L",
@@ -6425,7 +6483,22 @@
       ],
       "status": "open",
       "createdAt": "2026-11-19T15:57:01.555Z"
+    },
+    {
+      "groupCode": "2C05Z",
+      "hostRoll": "12204891",
+      "hostName": "Aarav Sharma",
+      "outletId": "outlet-1",
+      "members": [
+        {
+          "name": "Aarav Sharma",
+          "roll": "12204891",
+          "items": []
+        }
+      ],
+      "status": "open",
+      "createdAt": "2026-11-19T16:59:53.278Z"
     }
   ],
-  "tokenCounter": 108
+  "tokenCounter": 109
 }
