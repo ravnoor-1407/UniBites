@@ -1,0 +1,3296 @@
+[
+  {
+    "dishId": "dish-001",
+    "outletId": "outlet-1",
+    "dishName": "Belgian Chocolate Overload Waffle",
+    "category": "Waffles",
+    "price": "₹145",
+    "file": "/images/menu/dish-001.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-002",
+    "outletId": "outlet-1",
+    "dishName": "Nutella Hazelnut Crunch Waffle",
+    "category": "Waffles",
+    "price": "₹165",
+    "file": "/images/menu/dish-002.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-003",
+    "outletId": "outlet-1",
+    "dishName": "Red Velvet Berry Waffle-wich",
+    "category": "Waffles",
+    "price": "₹155",
+    "file": "/images/menu/dish-003.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-004",
+    "outletId": "outlet-1",
+    "dishName": "Almond Cocoa Butter Waffle",
+    "category": "Waffles",
+    "price": "₹140",
+    "file": "/images/menu/dish-004.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-005",
+    "outletId": "outlet-1",
+    "dishName": "Death by Chocolate Sundae Bowl",
+    "category": "Sundaes",
+    "price": "₹175",
+    "file": "/images/menu/dish-005.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-006",
+    "outletId": "outlet-1",
+    "dishName": "Caramel Butterscotch Mini Bites",
+    "category": "Waffles",
+    "price": "₹120",
+    "file": "/images/menu/dish-006.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-007",
+    "outletId": "outlet-1",
+    "dishName": "Cookie & Cream Dream Waffle",
+    "category": "Waffles",
+    "price": "₹150",
+    "file": "/images/menu/dish-007.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-008",
+    "outletId": "outlet-1",
+    "dishName": "Triple Chocolate Stroopwafel",
+    "category": "Waffles",
+    "price": "₹110",
+    "file": "/images/menu/dish-008.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-009",
+    "outletId": "outlet-1",
+    "dishName": "Belgian Mocha Thick Shake",
+    "category": "Beverages",
+    "price": "₹135",
+    "file": "/images/menu/dish-009.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-010",
+    "outletId": "outlet-1",
+    "dishName": "Signature Hazelnut Cold Coffee",
+    "category": "Beverages",
+    "price": "₹125",
+    "file": "/images/menu/dish-010.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-011",
+    "outletId": "outlet-1",
+    "dishName": "Dark Chocolate Brownie Slab",
+    "category": "Desserts",
+    "price": "₹115",
+    "file": "/images/menu/dish-011.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-012",
+    "outletId": "outlet-1",
+    "dishName": "Strawberry Cream Cheese Waffle",
+    "category": "Waffles",
+    "price": "₹160",
+    "file": "/images/menu/dish-012.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-013",
+    "outletId": "outlet-1",
+    "dishName": "Double Chocolate Pancake Stack",
+    "category": "Waffles",
+    "price": "₹140",
+    "file": "/images/menu/dish-013.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-014",
+    "outletId": "outlet-cc-bokki",
+    "dishName": "Mozzarella Cheese Corndog",
+    "category": "Corndogs",
+    "price": "₹140",
+    "file": "/images/menu/dish-014.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-015",
+    "outletId": "outlet-cc-bokki",
+    "dishName": "Potato Crispy Half & Half Corndog",
+    "category": "Corndogs",
+    "price": "₹160",
+    "file": "/images/menu/dish-015.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-016",
+    "outletId": "outlet-cc-bokki",
+    "dishName": "Fiery Shin Ramyun with Egg",
+    "category": "Ramen",
+    "price": "₹150",
+    "file": "/images/menu/dish-016.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-017",
+    "outletId": "outlet-cc-bokki",
+    "dishName": "Kimchi Veg Ramen Bowl",
+    "category": "Ramen",
+    "price": "₹145",
+    "file": "/images/menu/dish-017.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-018",
+    "outletId": "outlet-cc-bokki",
+    "dishName": "Spicy Gochujang Tteokbokki",
+    "category": "Korean Mains",
+    "price": "₹165",
+    "file": "/images/menu/dish-018.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-019",
+    "outletId": "outlet-cc-bokki",
+    "dishName": "Creamy Rosé Cheese Tteokbokki",
+    "category": "Korean Mains",
+    "price": "₹175",
+    "file": "/images/menu/dish-019.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-020",
+    "outletId": "outlet-cc-bokki",
+    "dishName": "Crispy Potato Tornado Skewer",
+    "category": "Sides",
+    "price": "₹95",
+    "file": "/images/menu/dish-020.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-021",
+    "outletId": "outlet-cc-bokki",
+    "dishName": "Korean Sweet Chili Fried Tofu",
+    "category": "Sides",
+    "price": "₹130",
+    "file": "/images/menu/dish-021.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-022",
+    "outletId": "outlet-cc-bokki",
+    "dishName": "Seoul Fried Dumplings (6 pcs)",
+    "category": "Dumplings",
+    "price": "₹135",
+    "file": "/images/menu/dish-022.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-023",
+    "outletId": "outlet-cc-bokki",
+    "dishName": "Boba Brown Sugar Milk Tea",
+    "category": "Beverages",
+    "price": "₹140",
+    "file": "/images/menu/dish-023.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-024",
+    "outletId": "outlet-cc-bokki",
+    "dishName": "Sparkling Yuzu Lemonade Cooler",
+    "category": "Beverages",
+    "price": "₹110",
+    "file": "/images/menu/dish-024.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-025",
+    "outletId": "outlet-cc-bokki",
+    "dishName": "Crispy Chicken K-Bites",
+    "category": "Korean Mains",
+    "price": "₹185",
+    "file": "/images/menu/dish-025.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-026",
+    "outletId": "outlet-cc-wowchina",
+    "dishName": "Veg Hakka Noodles",
+    "category": "Noodles",
+    "price": "₹130",
+    "file": "/images/menu/dish-026.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-027",
+    "outletId": "outlet-cc-wowchina",
+    "dishName": "Chilli Garlic Wok Noodles",
+    "category": "Noodles",
+    "price": "₹140",
+    "file": "/images/menu/dish-027.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-028",
+    "outletId": "outlet-cc-wowchina",
+    "dishName": "Veg Manchurian Gravy Bowl",
+    "category": "Gravies",
+    "price": "₹155",
+    "file": "/images/menu/dish-028.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-029",
+    "outletId": "outlet-cc-wowchina",
+    "dishName": "Steamed Darjeeling Veg Momos (6 pcs)",
+    "category": "Momos",
+    "price": "₹110",
+    "file": "/images/menu/dish-029.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-030",
+    "outletId": "outlet-cc-wowchina",
+    "dishName": "Fried Cheese & Corn Momos (6 pcs)",
+    "category": "Momos",
+    "price": "₹130",
+    "file": "/images/menu/dish-030.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-031",
+    "outletId": "outlet-cc-wowchina",
+    "dishName": "Chilli Paneer Dry",
+    "category": "Appetizers",
+    "price": "₹170",
+    "file": "/images/menu/dish-031.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-032",
+    "outletId": "outlet-cc-wowchina",
+    "dishName": "Classic Fried Rice with Vegetables",
+    "category": "Rice",
+    "price": "₹135",
+    "file": "/images/menu/dish-032.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-033",
+    "outletId": "outlet-cc-wowchina",
+    "dishName": "Schezwan Fried Rice Bowl",
+    "category": "Rice",
+    "price": "₹145",
+    "file": "/images/menu/dish-033.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-034",
+    "outletId": "outlet-cc-wowchina",
+    "dishName": "Crispy Veg Spring Rolls (4 pcs)",
+    "category": "Appetizers",
+    "price": "₹120",
+    "file": "/images/menu/dish-034.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-035",
+    "outletId": "outlet-cc-wowchina",
+    "dishName": "Hot & Sour Veg Soup Bowl",
+    "category": "Soups",
+    "price": "₹95",
+    "file": "/images/menu/dish-035.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-036",
+    "outletId": "outlet-cc-wowchina",
+    "dishName": "Chilli Chicken Gravy Bowl",
+    "category": "Gravies",
+    "price": "₹195",
+    "file": "/images/menu/dish-036.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-037",
+    "outletId": "outlet-cc-wowchina",
+    "dishName": "Honey Chilli Crispy Potato",
+    "category": "Appetizers",
+    "price": "₹125",
+    "file": "/images/menu/dish-037.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-038",
+    "outletId": "outlet-cc-ovenexpress",
+    "dishName": "Farmhouse Special Cheese Pizza",
+    "category": "Pizzas",
+    "price": "₹185",
+    "file": "/images/menu/dish-038.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-039",
+    "outletId": "outlet-cc-ovenexpress",
+    "dishName": "Paneer Makhani Fusion Pizza",
+    "category": "Pizzas",
+    "price": "₹210",
+    "file": "/images/menu/dish-039.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-040",
+    "outletId": "outlet-cc-ovenexpress",
+    "dishName": "Classic Margherita Personal Pizza",
+    "category": "Pizzas",
+    "price": "₹165",
+    "file": "/images/menu/dish-040.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-041",
+    "outletId": "outlet-cc-ovenexpress",
+    "dishName": "Stuffed Garlic Breadsticks",
+    "category": "Garlic Bread",
+    "price": "₹125",
+    "file": "/images/menu/dish-041.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-042",
+    "outletId": "outlet-cc-ovenexpress",
+    "dishName": "Creamy Alfredo White Sauce Pasta",
+    "category": "Pastas",
+    "price": "₹175",
+    "file": "/images/menu/dish-042.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-043",
+    "outletId": "outlet-cc-ovenexpress",
+    "dishName": "Spicy Arbiatta Red Sauce Pasta",
+    "category": "Pastas",
+    "price": "₹165",
+    "file": "/images/menu/dish-043.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-044",
+    "outletId": "outlet-cc-ovenexpress",
+    "dishName": "Oven Wok Fried Rice",
+    "category": "Rice & Bowls",
+    "price": "₹140",
+    "file": "/images/menu/dish-044.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-045",
+    "outletId": "outlet-cc-ovenexpress",
+    "dishName": "Cheesy Peri-Peri Loaded Fries",
+    "category": "Fries",
+    "price": "₹120",
+    "file": "/images/menu/dish-045.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-046",
+    "outletId": "outlet-cc-ovenexpress",
+    "dishName": "Classic Virgin Mint Mojito",
+    "category": "Mojitos",
+    "price": "₹95",
+    "file": "/images/menu/dish-046.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-047",
+    "outletId": "outlet-cc-ovenexpress",
+    "dishName": "Green Apple Sparkler Mojito",
+    "category": "Mojitos",
+    "price": "₹105",
+    "file": "/images/menu/dish-047.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-048",
+    "outletId": "outlet-cc-ovenexpress",
+    "dishName": "Caramel Hazelnut Cold Coffee",
+    "category": "Coffees",
+    "price": "₹115",
+    "file": "/images/menu/dish-048.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-049",
+    "outletId": "outlet-cc-ovenexpress",
+    "dishName": "Belgian Chocolate Thick Shake",
+    "category": "Shakes",
+    "price": "₹130",
+    "file": "/images/menu/dish-049.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-050",
+    "outletId": "outlet-cc-ovenexpress",
+    "dishName": "BBQ Chicken Personal Pizza",
+    "category": "Pizzas",
+    "price": "₹225",
+    "file": "/images/menu/dish-050.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-051",
+    "outletId": "outlet-cc-kitchenette",
+    "dishName": "Paneer Butter Masala Combo",
+    "category": "Combos",
+    "price": "₹175",
+    "file": "/images/menu/dish-051.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-052",
+    "outletId": "outlet-cc-kitchenette",
+    "dishName": "Dal Makhani with Jeera Rice",
+    "category": "Combos",
+    "price": "₹155",
+    "file": "/images/menu/dish-052.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-053",
+    "outletId": "outlet-cc-kitchenette",
+    "dishName": "Special Executive Veg Thali",
+    "category": "Thalis",
+    "price": "₹195",
+    "file": "/images/menu/dish-053.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-054",
+    "outletId": "outlet-cc-kitchenette",
+    "dishName": "Amritsari Chole with 2 Bhature",
+    "category": "Meals",
+    "price": "₹140",
+    "file": "/images/menu/dish-054.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-055",
+    "outletId": "outlet-cc-kitchenette",
+    "dishName": "Stuffed Aloo Onion Kulcha with Chole",
+    "category": "Meals",
+    "price": "₹135",
+    "file": "/images/menu/dish-055.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-056",
+    "outletId": "outlet-cc-kitchenette",
+    "dishName": "Kadhai Paneer Rice Bowl",
+    "category": "Rice Bowls",
+    "price": "₹160",
+    "file": "/images/menu/dish-056.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-057",
+    "outletId": "outlet-cc-kitchenette",
+    "dishName": "Rajma Masala with Steamed Rice",
+    "category": "Rice Bowls",
+    "price": "₹130",
+    "file": "/images/menu/dish-057.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-058",
+    "outletId": "outlet-cc-kitchenette",
+    "dishName": "Paneer Stuffed Laccha Paratha (2 pcs)",
+    "category": "Breads",
+    "price": "₹125",
+    "file": "/images/menu/dish-058.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-059",
+    "outletId": "outlet-cc-kitchenette",
+    "dishName": "Tandoori Roti with Butter (4 pcs)",
+    "category": "Breads",
+    "price": "₹80",
+    "file": "/images/menu/dish-059.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-060",
+    "outletId": "outlet-cc-kitchenette",
+    "dishName": "Sweet Fresh Curd Lassi",
+    "category": "Beverages",
+    "price": "₹85",
+    "file": "/images/menu/dish-060.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-061",
+    "outletId": "outlet-cc-kitchenette",
+    "dishName": "Boondi Raita Bowl",
+    "category": "Sides",
+    "price": "₹80",
+    "file": "/images/menu/dish-061.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-062",
+    "outletId": "outlet-cc-kitchenette",
+    "dishName": "Warm Gulab Jamun (2 pcs)",
+    "category": "Desserts",
+    "price": "₹85",
+    "file": "/images/menu/dish-062.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-063",
+    "outletId": "outlet-cc-amul",
+    "dishName": "Traditional Cassata Slice",
+    "category": "Cassata & Cakes",
+    "price": "₹110",
+    "file": "/images/menu/dish-063.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-064",
+    "outletId": "outlet-cc-amul",
+    "dishName": "Royal Rabri Falooda Glass",
+    "category": "Falooda",
+    "price": "₹140",
+    "file": "/images/menu/dish-064.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-065",
+    "outletId": "outlet-cc-amul",
+    "dishName": "Kesar Pista Matka Kulfi",
+    "category": "Kulfi",
+    "price": "₹95",
+    "file": "/images/menu/dish-065.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-066",
+    "outletId": "outlet-cc-amul",
+    "dishName": "Alfonso Mango Sundae Bowl",
+    "category": "Sundaes",
+    "price": "₹135",
+    "file": "/images/menu/dish-066.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-067",
+    "outletId": "outlet-cc-amul",
+    "dishName": "Belgian Dark Chocolate Scoop (Double)",
+    "category": "Scoops",
+    "price": "₹120",
+    "file": "/images/menu/dish-067.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-068",
+    "outletId": "outlet-cc-amul",
+    "dishName": "Roasted Almond Butterscotch Sundae",
+    "category": "Sundaes",
+    "price": "₹130",
+    "file": "/images/menu/dish-068.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-069",
+    "outletId": "outlet-cc-amul",
+    "dishName": "Kool Cafe Chilled Coffee Bottle",
+    "category": "Beverages",
+    "price": "₹80",
+    "file": "/images/menu/dish-069.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-070",
+    "outletId": "outlet-cc-amul",
+    "dishName": "Strawberry Kulfi Stick (2 pcs)",
+    "category": "Kulfi",
+    "price": "₹90",
+    "file": "/images/menu/dish-070.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-071",
+    "outletId": "outlet-cc-amul",
+    "dishName": "Nutty Chocolate Cone Sundae",
+    "category": "Cones",
+    "price": "₹95",
+    "file": "/images/menu/dish-071.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-072",
+    "outletId": "outlet-cc-amul",
+    "dishName": "Vanilla Ice Cream with Hot Fudge",
+    "category": "Sundaes",
+    "price": "₹125",
+    "file": "/images/menu/dish-072.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-073",
+    "outletId": "outlet-cc-amul",
+    "dishName": "Tutti Frutti Cassata Roll Slice",
+    "category": "Cassata & Cakes",
+    "price": "₹105",
+    "file": "/images/menu/dish-073.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-074",
+    "outletId": "outlet-cc-amul",
+    "dishName": "Badam Milk Chilled Bottle",
+    "category": "Beverages",
+    "price": "₹85",
+    "file": "/images/menu/dish-074.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-075",
+    "outletId": "outlet-cc-nandjuice",
+    "dishName": "Fresh Exotic Fruit Salad Bowl",
+    "category": "Fruit Bowls",
+    "price": "₹120",
+    "file": "/images/menu/dish-075.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-076",
+    "outletId": "outlet-cc-nandjuice",
+    "dishName": "Sprouts & Papaya Detox Salad",
+    "category": "Fruit Bowls",
+    "price": "₹110",
+    "file": "/images/menu/dish-076.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-077",
+    "outletId": "outlet-cc-nandjuice",
+    "dishName": "Fresh Sweet Orange (Mosambi) Juice",
+    "category": "Fresh Juices",
+    "price": "₹95",
+    "file": "/images/menu/dish-077.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-078",
+    "outletId": "outlet-cc-nandjuice",
+    "dishName": "Pomegranate (Anaar) Pure Juice",
+    "category": "Fresh Juices",
+    "price": "₹135",
+    "file": "/images/menu/dish-078.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-079",
+    "outletId": "outlet-cc-nandjuice",
+    "dishName": "Alphonso Mango Thick Shake",
+    "category": "Shakes",
+    "price": "₹130",
+    "file": "/images/menu/dish-079.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-080",
+    "outletId": "outlet-cc-nandjuice",
+    "dishName": "Chocolate Oreo Thick Milkshake",
+    "category": "Shakes",
+    "price": "₹125",
+    "file": "/images/menu/dish-080.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-081",
+    "outletId": "outlet-cc-nandjuice",
+    "dishName": "Banana Peanut Butter Energy Smoothie",
+    "category": "Smoothies",
+    "price": "₹135",
+    "file": "/images/menu/dish-081.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-082",
+    "outletId": "outlet-cc-nandjuice",
+    "dishName": "Pineapple Mint Fresh Juice",
+    "category": "Fresh Juices",
+    "price": "₹90",
+    "file": "/images/menu/dish-082.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-083",
+    "outletId": "outlet-cc-nandjuice",
+    "dishName": "Mixed Fruit Cocktail Juice",
+    "category": "Fresh Juices",
+    "price": "₹105",
+    "file": "/images/menu/dish-083.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-084",
+    "outletId": "outlet-cc-nandjuice",
+    "dishName": "Cold Pressed Watermelon Juice",
+    "category": "Fresh Juices",
+    "price": "₹85",
+    "file": "/images/menu/dish-084.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-085",
+    "outletId": "outlet-cc-nandjuice",
+    "dishName": "Dry Fruit Kaju Badam Shake",
+    "category": "Shakes",
+    "price": "₹155",
+    "file": "/images/menu/dish-085.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-086",
+    "outletId": "outlet-cc-nandjuice",
+    "dishName": "Strawberry Yogurt Smoothie",
+    "category": "Smoothies",
+    "price": "₹125",
+    "file": "/images/menu/dish-086.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-087",
+    "outletId": "outlet-cse-kathi",
+    "dishName": "Double Paneer Tikka Kathi Roll",
+    "category": "Veg Rolls",
+    "price": "₹135",
+    "file": "/images/menu/dish-087.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-088",
+    "outletId": "outlet-cse-kathi",
+    "dishName": "Soya Chaap Masala Roll",
+    "category": "Veg Rolls",
+    "price": "₹125",
+    "file": "/images/menu/dish-088.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-089",
+    "outletId": "outlet-cse-kathi",
+    "dishName": "Cheese Burst Veg Roll",
+    "category": "Veg Rolls",
+    "price": "₹140",
+    "file": "/images/menu/dish-089.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-090",
+    "outletId": "outlet-cse-kathi",
+    "dishName": "Aloo Corn Mayo Kathi Roll",
+    "category": "Veg Rolls",
+    "price": "₹105",
+    "file": "/images/menu/dish-090.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-091",
+    "outletId": "outlet-cse-kathi",
+    "dishName": "Double Egg Roll",
+    "category": "Egg Rolls",
+    "price": "₹95",
+    "file": "/images/menu/dish-091.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-092",
+    "outletId": "outlet-cse-kathi",
+    "dishName": "Double Egg Chicken Tikka Roll",
+    "category": "Chicken Rolls",
+    "price": "₹165",
+    "file": "/images/menu/dish-092.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-093",
+    "outletId": "outlet-cse-kathi",
+    "dishName": "Chicken Seekh Kebab Roll",
+    "category": "Chicken Rolls",
+    "price": "₹155",
+    "file": "/images/menu/dish-093.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-094",
+    "outletId": "outlet-cse-kathi",
+    "dishName": "Spicy Peri Peri Crispy Fries",
+    "category": "Sides",
+    "price": "₹95",
+    "file": "/images/menu/dish-094.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-095",
+    "outletId": "outlet-cse-kathi",
+    "dishName": "Crispy Veg Nuggets (6 pcs)",
+    "category": "Sides",
+    "price": "₹110",
+    "file": "/images/menu/dish-095.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-096",
+    "outletId": "outlet-cse-kathi",
+    "dishName": "Chilled Masala Lemonade",
+    "category": "Beverages",
+    "price": "₹80",
+    "file": "/images/menu/dish-096.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-097",
+    "outletId": "outlet-cse-kathi",
+    "dishName": "Mutton Seekh Royal Roll",
+    "category": "Non-Veg Rolls",
+    "price": "₹195",
+    "file": "/images/menu/dish-097.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-098",
+    "outletId": "outlet-cse-kathi",
+    "dishName": "Mushroom Corn Tikka Roll",
+    "category": "Veg Rolls",
+    "price": "₹135",
+    "file": "/images/menu/dish-098.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-099",
+    "outletId": "outlet-cse-kannu",
+    "dishName": "Special Kulhad Masala Chai (Serves 2)",
+    "category": "Chai",
+    "price": "₹80",
+    "file": "/images/menu/dish-099.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-100",
+    "outletId": "outlet-cse-kannu",
+    "dishName": "Adrak Elaichi Kulhad Chai",
+    "category": "Chai",
+    "price": "₹80",
+    "file": "/images/menu/dish-100.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-101",
+    "outletId": "outlet-cse-kannu",
+    "dishName": "Classic Bun Maska with Amul Butter",
+    "category": "Bun Maska",
+    "price": "₹80",
+    "file": "/images/menu/dish-101.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-102",
+    "outletId": "outlet-cse-kannu",
+    "dishName": "Bun Maska Jam with Tutti Frutti",
+    "category": "Bun Maska",
+    "price": "₹85",
+    "file": "/images/menu/dish-102.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-103",
+    "outletId": "outlet-cse-kannu",
+    "dishName": "Indori Poha with Crispy Sev",
+    "category": "Breakfast",
+    "price": "₹80",
+    "file": "/images/menu/dish-103.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-104",
+    "outletId": "outlet-cse-kannu",
+    "dishName": "Crispy Punjabi Samosa Plate (2 pcs)",
+    "category": "Snacks",
+    "price": "₹80",
+    "file": "/images/menu/dish-104.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-105",
+    "outletId": "outlet-cse-kannu",
+    "dishName": "Samosa Bun Slider (2 pcs)",
+    "category": "Snacks",
+    "price": "₹95",
+    "file": "/images/menu/dish-105.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-106",
+    "outletId": "outlet-cse-kannu",
+    "dishName": "Cheese Garlic Bun Maska",
+    "category": "Bun Maska",
+    "price": "₹105",
+    "file": "/images/menu/dish-106.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-107",
+    "outletId": "outlet-cse-kannu",
+    "dishName": "Desi Ghee Mathri Plate (4 pcs)",
+    "category": "Snacks",
+    "price": "₹80",
+    "file": "/images/menu/dish-107.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-108",
+    "outletId": "outlet-cse-kannu",
+    "dishName": "Paneer Pakora Plate (4 pcs)",
+    "category": "Snacks",
+    "price": "₹110",
+    "file": "/images/menu/dish-108.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-109",
+    "outletId": "outlet-cse-kannu",
+    "dishName": "Chilled Cold Coffee Glass",
+    "category": "Cold Beverages",
+    "price": "₹90",
+    "file": "/images/menu/dish-109.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-110",
+    "outletId": "outlet-cse-kannu",
+    "dishName": "Shikanji Fresh Lime Soda",
+    "category": "Cold Beverages",
+    "price": "₹80",
+    "file": "/images/menu/dish-110.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-111",
+    "outletId": "outlet-cse-basant",
+    "dishName": "Traditional Cassata Ice Cream Slice",
+    "category": "Cassata",
+    "price": "₹115",
+    "file": "/images/menu/dish-111.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-112",
+    "outletId": "outlet-cse-basant",
+    "dishName": "Royal Rabri Falooda Glass",
+    "category": "Falooda",
+    "price": "₹145",
+    "file": "/images/menu/dish-112.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-113",
+    "outletId": "outlet-cse-basant",
+    "dishName": "Kesar Pista Badam Kulfi Stick (2 pcs)",
+    "category": "Kulfi",
+    "price": "₹105",
+    "file": "/images/menu/dish-113.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-114",
+    "outletId": "outlet-cse-basant",
+    "dishName": "Mango Rabri Falooda Special",
+    "category": "Falooda",
+    "price": "₹155",
+    "file": "/images/menu/dish-114.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-115",
+    "outletId": "outlet-cse-basant",
+    "dishName": "Basant Special Tutti Frutti Sundae",
+    "category": "Sundaes",
+    "price": "₹135",
+    "file": "/images/menu/dish-115.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-116",
+    "outletId": "outlet-cse-basant",
+    "dishName": "Chocolate Walnut Brownie Fudge",
+    "category": "Desserts",
+    "price": "₹150",
+    "file": "/images/menu/dish-116.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-117",
+    "outletId": "outlet-cse-basant",
+    "dishName": "Shahi Malai Kulfi Plate",
+    "category": "Kulfi",
+    "price": "₹110",
+    "file": "/images/menu/dish-117.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-118",
+    "outletId": "outlet-cse-basant",
+    "dishName": "Gulab Jamun with Vanilla Ice Cream",
+    "category": "Desserts",
+    "price": "₹120",
+    "file": "/images/menu/dish-118.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-119",
+    "outletId": "outlet-cse-basant",
+    "dishName": "Thick Butterscotch Milkshake",
+    "category": "Shakes",
+    "price": "₹120",
+    "file": "/images/menu/dish-119.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-120",
+    "outletId": "outlet-cse-basant",
+    "dishName": "Fresh Strawberry Cream Cup",
+    "category": "Desserts",
+    "price": "₹125",
+    "file": "/images/menu/dish-120.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-121",
+    "outletId": "outlet-cse-basant",
+    "dishName": "Choco Chip Ice Cream Tub (300ml)",
+    "category": "Tubs",
+    "price": "₹140",
+    "file": "/images/menu/dish-121.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-122",
+    "outletId": "outlet-cse-basant",
+    "dishName": "Dry Fruit Sundae Delight",
+    "category": "Sundaes",
+    "price": "₹165",
+    "file": "/images/menu/dish-122.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-123",
+    "outletId": "outlet-cse-maggi",
+    "dishName": "Double Cheese Butter Maggi",
+    "category": "Maggi",
+    "price": "₹110",
+    "file": "/images/menu/dish-123.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-124",
+    "outletId": "outlet-cse-maggi",
+    "dishName": "Spicy Peri Peri Tadka Maggi",
+    "category": "Maggi",
+    "price": "₹95",
+    "file": "/images/menu/dish-124.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-125",
+    "outletId": "outlet-cse-maggi",
+    "dishName": "Classic Vegetable Masala Maggi",
+    "category": "Maggi",
+    "price": "₹85",
+    "file": "/images/menu/dish-125.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-126",
+    "outletId": "outlet-cse-maggi",
+    "dishName": "White Sauce Cheesy Pasta",
+    "category": "Pasta",
+    "price": "₹145",
+    "file": "/images/menu/dish-126.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-127",
+    "outletId": "outlet-cse-maggi",
+    "dishName": "Red Sauce Arbiatta Pasta",
+    "category": "Pasta",
+    "price": "₹140",
+    "file": "/images/menu/dish-127.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-128",
+    "outletId": "outlet-cse-maggi",
+    "dishName": "Cheesy Loaded French Fries",
+    "category": "Fries",
+    "price": "₹115",
+    "file": "/images/menu/dish-128.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-129",
+    "outletId": "outlet-cse-maggi",
+    "dishName": "Crispy Veg Cheese Burger",
+    "category": "Burgers",
+    "price": "₹95",
+    "file": "/images/menu/dish-129.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-130",
+    "outletId": "outlet-cse-maggi",
+    "dishName": "Paneer Tikka Grilled Sandwich",
+    "category": "Sandwiches",
+    "price": "₹130",
+    "file": "/images/menu/dish-130.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-131",
+    "outletId": "outlet-cse-maggi",
+    "dishName": "Cheese Corn Grilled Sandwich",
+    "category": "Sandwiches",
+    "price": "₹115",
+    "file": "/images/menu/dish-131.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-132",
+    "outletId": "outlet-cse-maggi",
+    "dishName": "Crispy Masala Aloo Tikki Burger",
+    "category": "Burgers",
+    "price": "₹80",
+    "file": "/images/menu/dish-132.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-133",
+    "outletId": "outlet-cse-maggi",
+    "dishName": "Iced Lemon Tea with Mint",
+    "category": "Beverages",
+    "price": "₹80",
+    "file": "/images/menu/dish-133.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-134",
+    "outletId": "outlet-cse-maggi",
+    "dishName": "Cold Chocolate Milk Frappe",
+    "category": "Beverages",
+    "price": "₹110",
+    "file": "/images/menu/dish-134.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-135",
+    "outletId": "outlet-cse-subway",
+    "dishName": "Paneer Tikka Sub (6 Inch)",
+    "category": "Subs",
+    "price": "₹165",
+    "file": "/images/menu/dish-135.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-136",
+    "outletId": "outlet-cse-subway",
+    "dishName": "Veggie Delight Herb Sub (6 Inch)",
+    "category": "Subs",
+    "price": "₹135",
+    "file": "/images/menu/dish-136.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-137",
+    "outletId": "outlet-cse-subway",
+    "dishName": "Corn & Peas Patty Sub (6 Inch)",
+    "category": "Subs",
+    "price": "₹145",
+    "file": "/images/menu/dish-137.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-138",
+    "outletId": "outlet-cse-subway",
+    "dishName": "Grilled Chicken Breast Sub (6 Inch)",
+    "category": "Subs",
+    "price": "₹195",
+    "file": "/images/menu/dish-138.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-139",
+    "outletId": "outlet-cse-subway",
+    "dishName": "Roasted Chicken Seekh Sub (6 Inch)",
+    "category": "Subs",
+    "price": "₹185",
+    "file": "/images/menu/dish-139.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-140",
+    "outletId": "outlet-cse-subway",
+    "dishName": "High Protein Greek Salad Bowl",
+    "category": "Salads",
+    "price": "₹155",
+    "file": "/images/menu/dish-140.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-141",
+    "outletId": "outlet-cse-subway",
+    "dishName": "Spicy Paneer Protein Bowl",
+    "category": "Salads",
+    "price": "₹170",
+    "file": "/images/menu/dish-141.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-142",
+    "outletId": "outlet-cse-subway",
+    "dishName": "Crunchy Chicken Caesar Salad Bowl",
+    "category": "Salads",
+    "price": "₹190",
+    "file": "/images/menu/dish-142.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-143",
+    "outletId": "outlet-cse-subway",
+    "dishName": "Toasted Garlic Herb Bread (4 pcs)",
+    "category": "Sides",
+    "price": "₹85",
+    "file": "/images/menu/dish-143.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-144",
+    "outletId": "outlet-cse-subway",
+    "dishName": "Peach Passion Iced Tea",
+    "category": "Beverages",
+    "price": "₹85",
+    "file": "/images/menu/dish-144.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-145",
+    "outletId": "outlet-cse-subway",
+    "dishName": "Lemon Mint Green Cooler",
+    "category": "Beverages",
+    "price": "₹80",
+    "file": "/images/menu/dish-145.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-146",
+    "outletId": "outlet-cse-subway",
+    "dishName": "Chocolate Chip Soft Baked Cookie (2 pcs)",
+    "category": "Desserts",
+    "price": "₹80",
+    "file": "/images/menu/dish-146.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-147",
+    "outletId": "outlet-cse-chaicatering",
+    "dishName": "Special Cutting Chai Kettle (Serves 2)",
+    "category": "Tea",
+    "price": "₹80",
+    "file": "/images/menu/dish-147.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-148",
+    "outletId": "outlet-cse-chaicatering",
+    "dishName": "Ginger Tulsi Immunity Chai",
+    "category": "Tea",
+    "price": "₹80",
+    "file": "/images/menu/dish-148.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-149",
+    "outletId": "outlet-cse-chaicatering",
+    "dishName": "Stuffed Paneer Bread Pakora (2 pcs)",
+    "category": "Pakoras",
+    "price": "₹90",
+    "file": "/images/menu/dish-149.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-150",
+    "outletId": "outlet-cse-chaicatering",
+    "dishName": "Mix Veg Pakora Platter",
+    "category": "Pakoras",
+    "price": "₹95",
+    "file": "/images/menu/dish-150.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-151",
+    "outletId": "outlet-cse-chaicatering",
+    "dishName": "Dal Kachori with Aloo Sabzi (2 pcs)",
+    "category": "Snacks",
+    "price": "₹85",
+    "file": "/images/menu/dish-151.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-152",
+    "outletId": "outlet-cse-chaicatering",
+    "dishName": "Khasta Matri with Pickle (6 pcs)",
+    "category": "Snacks",
+    "price": "₹80",
+    "file": "/images/menu/dish-152.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-153",
+    "outletId": "outlet-cse-chaicatering",
+    "dishName": "Crispy Aloo Samosa (2 pcs)",
+    "category": "Snacks",
+    "price": "₹80",
+    "file": "/images/menu/dish-153.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-154",
+    "outletId": "outlet-cse-chaicatering",
+    "dishName": "Egg Bhurji with 2 Butter Pav",
+    "category": "Quick Eats",
+    "price": "₹95",
+    "file": "/images/menu/dish-154.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-155",
+    "outletId": "outlet-cse-chaicatering",
+    "dishName": "Bombay Pav Butter Toast (2 pcs)",
+    "category": "Snacks",
+    "price": "₹80",
+    "file": "/images/menu/dish-155.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-156",
+    "outletId": "outlet-cse-chaicatering",
+    "dishName": "Chilled Nimbu Shikanji",
+    "category": "Cold Drinks",
+    "price": "₹80",
+    "file": "/images/menu/dish-156.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-157",
+    "outletId": "outlet-cse-chaicatering",
+    "dishName": "Sweet Malai Lassi Glass",
+    "category": "Cold Drinks",
+    "price": "₹85",
+    "file": "/images/menu/dish-157.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-158",
+    "outletId": "outlet-cse-chaicatering",
+    "dishName": "Hot Badam Kesar Milk Glass",
+    "category": "Beverages",
+    "price": "₹90",
+    "file": "/images/menu/dish-158.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-159",
+    "outletId": "outlet-cse-punjabitadka",
+    "dishName": "Special Shahi Paneer with 2 Naan",
+    "category": "Combos",
+    "price": "₹185",
+    "file": "/images/menu/dish-159.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-160",
+    "outletId": "outlet-cse-punjabitadka",
+    "dishName": "Dhaba Dal Makhani with Rice",
+    "category": "Combos",
+    "price": "₹160",
+    "file": "/images/menu/dish-160.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-161",
+    "outletId": "outlet-cse-punjabitadka",
+    "dishName": "Punjabi Deluxe Thali",
+    "category": "Thalis",
+    "price": "₹195",
+    "file": "/images/menu/dish-161.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-162",
+    "outletId": "outlet-cse-punjabitadka",
+    "dishName": "Aloo Pyaz Amritsari Paratha (2 pcs)",
+    "category": "Parathas",
+    "price": "₹130",
+    "file": "/images/menu/dish-162.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-163",
+    "outletId": "outlet-cse-punjabitadka",
+    "dishName": "Paneer Kulcha with Pindi Chole",
+    "category": "Combos",
+    "price": "₹150",
+    "file": "/images/menu/dish-163.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-164",
+    "outletId": "outlet-cse-punjabitadka",
+    "dishName": "Kadhai Paneer Semi Gravy",
+    "category": "Mains",
+    "price": "₹175",
+    "file": "/images/menu/dish-164.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-165",
+    "outletId": "outlet-cse-punjabitadka",
+    "dishName": "Yellow Dal Tadka Bowl",
+    "category": "Mains",
+    "price": "₹110",
+    "file": "/images/menu/dish-165.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-166",
+    "outletId": "outlet-cse-punjabitadka",
+    "dishName": "Garlic Butter Naan (2 pcs)",
+    "category": "Breads",
+    "price": "₹90",
+    "file": "/images/menu/dish-166.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-167",
+    "outletId": "outlet-cse-punjabitadka",
+    "dishName": "Jeera Rice with Boondi Raita",
+    "category": "Rice",
+    "price": "₹120",
+    "file": "/images/menu/dish-167.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-168",
+    "outletId": "outlet-cse-punjabitadka",
+    "dishName": "Chole Chawal Quick Meal Bowl",
+    "category": "Rice Bowls",
+    "price": "₹125",
+    "file": "/images/menu/dish-168.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-169",
+    "outletId": "outlet-cse-punjabitadka",
+    "dishName": "Punjabi Masala Chaas (Glass)",
+    "category": "Beverages",
+    "price": "₹80",
+    "file": "/images/menu/dish-169.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-170",
+    "outletId": "outlet-cse-punjabitadka",
+    "dishName": "Hot Gulab Jamun (2 pcs)",
+    "category": "Desserts",
+    "price": "₹80",
+    "file": "/images/menu/dish-170.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-171",
+    "outletId": "outlet-bh2-shahji",
+    "dishName": "Paneer Stuffed Amritsari Kulcha with Chole",
+    "category": "Paneer Kulcha",
+    "price": "₹145",
+    "file": "/images/menu/dish-171.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-172",
+    "outletId": "outlet-bh2-shahji",
+    "dishName": "Paneer Kulcha with Nutri Keema Gravy",
+    "category": "Paneer Kulcha",
+    "price": "₹155",
+    "file": "/images/menu/dish-172.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-173",
+    "outletId": "outlet-bh2-shahji",
+    "dishName": "Desi Ghee Stuffed Aloo Kulcha with Chole",
+    "category": "Aloo Kulcha",
+    "price": "₹125",
+    "file": "/images/menu/dish-173.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-174",
+    "outletId": "outlet-bh2-shahji",
+    "dishName": "Aloo Kulcha with Punjabi Nutri",
+    "category": "Aloo Kulcha",
+    "price": "₹135",
+    "file": "/images/menu/dish-174.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-175",
+    "outletId": "outlet-bh2-shahji",
+    "dishName": "Mix Veg Stuffed Kulcha with Chole",
+    "category": "Mix Veg Kulcha",
+    "price": "₹135",
+    "file": "/images/menu/dish-175.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-176",
+    "outletId": "outlet-bh2-shahji",
+    "dishName": "Mix Veg Kulcha with Soya Nutri Gravy",
+    "category": "Mix Veg Kulcha",
+    "price": "₹145",
+    "file": "/images/menu/dish-176.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-177",
+    "outletId": "outlet-bh2-shahji",
+    "dishName": "Special Chur-Chur Kulcha Thali",
+    "category": "Special Thali",
+    "price": "₹175",
+    "file": "/images/menu/dish-177.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-178",
+    "outletId": "outlet-bh2-shahji",
+    "dishName": "Onion Garlic Stuffed Kulcha with Chole",
+    "category": "Kulchas",
+    "price": "₹130",
+    "file": "/images/menu/dish-178.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-179",
+    "outletId": "outlet-bh2-shahji",
+    "dishName": "Extra Bowl of Spicy Chole",
+    "category": "Gravies",
+    "price": "₹80",
+    "file": "/images/menu/dish-179.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-180",
+    "outletId": "outlet-bh2-shahji",
+    "dishName": "Extra Bowl of Soya Nutri Gravy",
+    "category": "Gravies",
+    "price": "₹85",
+    "file": "/images/menu/dish-180.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-181",
+    "outletId": "outlet-bh2-shahji",
+    "dishName": "Chilled Sweet Punjabi Lassi",
+    "category": "Beverages",
+    "price": "₹85",
+    "file": "/images/menu/dish-181.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-182",
+    "outletId": "outlet-bh2-shahji",
+    "dishName": "Spiced Mint Chaas (Buttermilk)",
+    "category": "Beverages",
+    "price": "₹80",
+    "file": "/images/menu/dish-182.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-183",
+    "outletId": "outlet-bh2-shahji",
+    "dishName": "Papad & Imli Pyaz Chutney Platter",
+    "category": "Sides",
+    "price": "₹80",
+    "file": "/images/menu/dish-183.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-184",
+    "outletId": "outlet-bh2-hangouts",
+    "dishName": "Special Masala Dosa",
+    "category": "Dosas",
+    "price": "₹115",
+    "file": "/images/menu/dish-184.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-185",
+    "outletId": "outlet-bh2-hangouts",
+    "dishName": "Ghee Roast Crispy Dosa",
+    "category": "Dosas",
+    "price": "₹130",
+    "file": "/images/menu/dish-185.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-186",
+    "outletId": "outlet-bh2-hangouts",
+    "dishName": "Paneer Stuffed Masala Dosa",
+    "category": "Dosas",
+    "price": "₹145",
+    "file": "/images/menu/dish-186.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-187",
+    "outletId": "outlet-bh2-hangouts",
+    "dishName": "Cheese Burst Masala Dosa",
+    "category": "Dosas",
+    "price": "₹155",
+    "file": "/images/menu/dish-187.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-188",
+    "outletId": "outlet-bh2-hangouts",
+    "dishName": "Mysore Masala Spicy Dosa",
+    "category": "Dosas",
+    "price": "₹135",
+    "file": "/images/menu/dish-188.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-189",
+    "outletId": "outlet-bh2-hangouts",
+    "dishName": "Crispy Medu Vada (2 pcs)",
+    "category": "Vadas",
+    "price": "₹85",
+    "file": "/images/menu/dish-189.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-190",
+    "outletId": "outlet-bh2-hangouts",
+    "dishName": "Steamed Idli Sambar (2 pcs)",
+    "category": "Idlis",
+    "price": "₹80",
+    "file": "/images/menu/dish-190.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-191",
+    "outletId": "outlet-bh2-hangouts",
+    "dishName": "Idli Vada Combo Plate (1 Idli + 1 Vada)",
+    "category": "Combos",
+    "price": "₹90",
+    "file": "/images/menu/dish-191.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-192",
+    "outletId": "outlet-bh2-hangouts",
+    "dishName": "Onion Tomato Uttapam",
+    "category": "Uttapam",
+    "price": "₹125",
+    "file": "/images/menu/dish-192.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-193",
+    "outletId": "outlet-bh2-hangouts",
+    "dishName": "South Indian Filter Coffee",
+    "category": "Beverages",
+    "price": "₹80",
+    "file": "/images/menu/dish-193.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-194",
+    "outletId": "outlet-bh2-hangouts",
+    "dishName": "Lemon Rice with Papad",
+    "category": "Rice",
+    "price": "₹105",
+    "file": "/images/menu/dish-194.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-195",
+    "outletId": "outlet-bh2-hangouts",
+    "dishName": "Curd Rice with Pomegranate",
+    "category": "Rice",
+    "price": "₹110",
+    "file": "/images/menu/dish-195.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-196",
+    "outletId": "outlet-bh2-nand",
+    "dishName": "Jumbo Fresh Fruit Salad Bowl",
+    "category": "Fruit Bowls",
+    "price": "₹120",
+    "file": "/images/menu/dish-196.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-197",
+    "outletId": "outlet-bh2-nand",
+    "dishName": "Chilled Sweet Lime (Mosambi) Juice",
+    "category": "Juices",
+    "price": "₹90",
+    "file": "/images/menu/dish-197.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-198",
+    "outletId": "outlet-bh2-nand",
+    "dishName": "Pure Pomegranate (Anaar) Juice",
+    "category": "Juices",
+    "price": "₹135",
+    "file": "/images/menu/dish-198.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-199",
+    "outletId": "outlet-bh2-nand",
+    "dishName": "Alphonso Mango Thick Shake",
+    "category": "Shakes",
+    "price": "₹130",
+    "file": "/images/menu/dish-199.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-200",
+    "outletId": "outlet-bh2-nand",
+    "dishName": "Banana Caramel Thick Shake",
+    "category": "Shakes",
+    "price": "₹115",
+    "file": "/images/menu/dish-200.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-201",
+    "outletId": "outlet-bh2-nand",
+    "dishName": "Chocolate Oreo Shake",
+    "category": "Shakes",
+    "price": "₹125",
+    "file": "/images/menu/dish-201.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-202",
+    "outletId": "outlet-bh2-nand",
+    "dishName": "KitKat Crunchy Milkshake",
+    "category": "Shakes",
+    "price": "₹135",
+    "file": "/images/menu/dish-202.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-203",
+    "outletId": "outlet-bh2-nand",
+    "dishName": "Pineapple Fresh Juice",
+    "category": "Juices",
+    "price": "₹90",
+    "file": "/images/menu/dish-203.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-204",
+    "outletId": "outlet-bh2-nand",
+    "dishName": "Fresh Apple & Beetroot Detox Juice",
+    "category": "Healthy Juices",
+    "price": "₹110",
+    "file": "/images/menu/dish-204.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-205",
+    "outletId": "outlet-bh2-nand",
+    "dishName": "Sweet Strawberry Milkshake",
+    "category": "Shakes",
+    "price": "₹125",
+    "file": "/images/menu/dish-205.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-206",
+    "outletId": "outlet-bh2-nand",
+    "dishName": "Papaya Milk Smoothie",
+    "category": "Smoothies",
+    "price": "₹100",
+    "file": "/images/menu/dish-206.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-207",
+    "outletId": "outlet-bh2-nand",
+    "dishName": "Dry Fruit Kaju Anjeer Shake",
+    "category": "Premium Shakes",
+    "price": "₹160",
+    "file": "/images/menu/dish-207.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-208",
+    "outletId": "outlet-bh2-burger",
+    "dishName": "Crispy Veggie Supreme Burger",
+    "category": "Burgers",
+    "price": "₹95",
+    "file": "/images/menu/dish-208.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-209",
+    "outletId": "outlet-bh2-burger",
+    "dishName": "Melted Double Cheese Burger",
+    "category": "Burgers",
+    "price": "₹115",
+    "file": "/images/menu/dish-209.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-210",
+    "outletId": "outlet-bh2-burger",
+    "dishName": "Spicy Paneer Crunch Burger",
+    "category": "Burgers",
+    "price": "₹135",
+    "file": "/images/menu/dish-210.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-211",
+    "outletId": "outlet-bh2-burger",
+    "dishName": "Crispy Chicken Fillet Burger",
+    "category": "Burgers",
+    "price": "₹155",
+    "file": "/images/menu/dish-211.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-212",
+    "outletId": "outlet-bh2-burger",
+    "dishName": "Smoky BBQ Grilled Chicken Burger",
+    "category": "Burgers",
+    "price": "₹165",
+    "file": "/images/menu/dish-212.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-213",
+    "outletId": "outlet-bh2-burger",
+    "dishName": "Peri-Peri French Fries (Large)",
+    "category": "Fries",
+    "price": "₹95",
+    "file": "/images/menu/dish-213.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-214",
+    "outletId": "outlet-bh2-burger",
+    "dishName": "Cheesy Jalapeño Fries",
+    "category": "Fries",
+    "price": "₹120",
+    "file": "/images/menu/dish-214.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-215",
+    "outletId": "outlet-bh2-burger",
+    "dishName": "Crispy Chicken Popcorn Basket",
+    "category": "Sides",
+    "price": "₹145",
+    "file": "/images/menu/dish-215.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-216",
+    "outletId": "outlet-bh2-burger",
+    "dishName": "Crispy Veg Nuggets (6 pcs)",
+    "category": "Sides",
+    "price": "₹105",
+    "file": "/images/menu/dish-216.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-217",
+    "outletId": "outlet-bh2-burger",
+    "dishName": "Cold Chocolate Thick Shake",
+    "category": "Beverages",
+    "price": "₹115",
+    "file": "/images/menu/dish-217.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-218",
+    "outletId": "outlet-bh2-burger",
+    "dishName": "Iced Lemon Mint Soda",
+    "category": "Beverages",
+    "price": "₹80",
+    "file": "/images/menu/dish-218.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-219",
+    "outletId": "outlet-bh2-burger",
+    "dishName": "Cheesy Mozzarella Sticks (4 pcs)",
+    "category": "Sides",
+    "price": "₹130",
+    "file": "/images/menu/dish-219.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-220",
+    "outletId": "outlet-b34-chaap",
+    "dishName": "Afghani Malai Soya Chaap",
+    "category": "Tandoori Chaap",
+    "price": "₹160",
+    "file": "/images/menu/dish-220.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-221",
+    "outletId": "outlet-b34-chaap",
+    "dishName": "Tandoori Masala Soya Chaap",
+    "category": "Tandoori Chaap",
+    "price": "₹150",
+    "file": "/images/menu/dish-221.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-222",
+    "outletId": "outlet-b34-chaap",
+    "dishName": "Achari Soya Chaap Tikka",
+    "category": "Tandoori Chaap",
+    "price": "₹155",
+    "file": "/images/menu/dish-222.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-223",
+    "outletId": "outlet-b34-chaap",
+    "dishName": "Malai Chaap Roll with Mint Chutney",
+    "category": "Chaap Rolls",
+    "price": "₹140",
+    "file": "/images/menu/dish-223.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-224",
+    "outletId": "outlet-b34-chaap",
+    "dishName": "Tandoori Spicy Chaap Roll",
+    "category": "Chaap Rolls",
+    "price": "₹130",
+    "file": "/images/menu/dish-224.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-225",
+    "outletId": "outlet-b34-chaap",
+    "dishName": "Soya Chaap Gravy with 2 Rumali Roti",
+    "category": "Combos",
+    "price": "₹175",
+    "file": "/images/menu/dish-225.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-226",
+    "outletId": "outlet-b34-chaap",
+    "dishName": "Tandoori Paneer Tikka (6 pcs)",
+    "category": "Tandoori Starters",
+    "price": "₹170",
+    "file": "/images/menu/dish-226.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-227",
+    "outletId": "outlet-b34-chaap",
+    "dishName": "Mushroom Malai Tikka Skewer",
+    "category": "Tandoori Starters",
+    "price": "₹165",
+    "file": "/images/menu/dish-227.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-228",
+    "outletId": "outlet-b34-chaap",
+    "dishName": "Fresh Rumali Roti (2 pcs)",
+    "category": "Breads",
+    "price": "₹80",
+    "file": "/images/menu/dish-228.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-229",
+    "outletId": "outlet-b34-chaap",
+    "dishName": "Butter Tandoori Naan (2 pcs)",
+    "category": "Breads",
+    "price": "₹85",
+    "file": "/images/menu/dish-229.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-230",
+    "outletId": "outlet-b34-chaap",
+    "dishName": "Chilled Spiced Chaas Glass",
+    "category": "Beverages",
+    "price": "₹80",
+    "file": "/images/menu/dish-230.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-231",
+    "outletId": "outlet-b34-chaap",
+    "dishName": "Sweet Punjabi Lassi Glass",
+    "category": "Beverages",
+    "price": "₹85",
+    "file": "/images/menu/dish-231.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-232",
+    "outletId": "outlet-b34-funbites",
+    "dishName": "Wok Hakka Veg Noodles",
+    "category": "Noodles",
+    "price": "₹125",
+    "file": "/images/menu/dish-232.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-233",
+    "outletId": "outlet-b34-funbites",
+    "dishName": "Chilli Garlic Schezwan Noodles",
+    "category": "Noodles",
+    "price": "₹135",
+    "file": "/images/menu/dish-233.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-234",
+    "outletId": "outlet-b34-funbites",
+    "dishName": "Alfredo White Sauce Penne Pasta",
+    "category": "Pasta",
+    "price": "₹165",
+    "file": "/images/menu/dish-234.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-235",
+    "outletId": "outlet-b34-funbites",
+    "dishName": "Arbiatta Red Sauce Penne Pasta",
+    "category": "Pasta",
+    "price": "₹155",
+    "file": "/images/menu/dish-235.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-236",
+    "outletId": "outlet-b34-funbites",
+    "dishName": "Chilli Paneer Dry",
+    "category": "Chinese Starters",
+    "price": "₹160",
+    "file": "/images/menu/dish-236.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-237",
+    "outletId": "outlet-b34-funbites",
+    "dishName": "Crispy Veg Manchurian Gravy",
+    "category": "Chinese Mains",
+    "price": "₹145",
+    "file": "/images/menu/dish-237.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-238",
+    "outletId": "outlet-b34-funbites",
+    "dishName": "Vegetable Wok Fried Rice",
+    "category": "Rice",
+    "price": "₹130",
+    "file": "/images/menu/dish-238.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-239",
+    "outletId": "outlet-b34-funbites",
+    "dishName": "Crispy Golden French Fries",
+    "category": "Fries",
+    "price": "₹85",
+    "file": "/images/menu/dish-239.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-240",
+    "outletId": "outlet-b34-funbites",
+    "dishName": "Peri-Peri Loaded Cheese Fries",
+    "category": "Fries",
+    "price": "₹115",
+    "file": "/images/menu/dish-240.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-241",
+    "outletId": "outlet-b34-funbites",
+    "dishName": "Crispy Veg Spring Rolls (4 pcs)",
+    "category": "Chinese Starters",
+    "price": "₹110",
+    "file": "/images/menu/dish-241.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-242",
+    "outletId": "outlet-b34-funbites",
+    "dishName": "Classic Cold Coffee Glass",
+    "category": "Beverages",
+    "price": "₹85",
+    "file": "/images/menu/dish-242.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-243",
+    "outletId": "outlet-b34-funbites",
+    "dishName": "Virgin Mint Lemon Mojito",
+    "category": "Beverages",
+    "price": "₹85",
+    "file": "/images/menu/dish-243.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-244",
+    "outletId": "outlet-b34-khaopiyo",
+    "dishName": "Special Amul Butter Pav Bhaji",
+    "category": "Pav Bhaji",
+    "price": "₹120",
+    "file": "/images/menu/dish-244.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-245",
+    "outletId": "outlet-b34-khaopiyo",
+    "dishName": "Cheese Burst Pav Bhaji",
+    "category": "Pav Bhaji",
+    "price": "₹140",
+    "file": "/images/menu/dish-245.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-246",
+    "outletId": "outlet-b34-khaopiyo",
+    "dishName": "Delhi Style Chole Bhature (2 pcs)",
+    "category": "Chole Bhature",
+    "price": "₹135",
+    "file": "/images/menu/dish-246.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-247",
+    "outletId": "outlet-b34-khaopiyo",
+    "dishName": "Paneer Stuffed Bhature with Chole",
+    "category": "Chole Bhature",
+    "price": "₹155",
+    "file": "/images/menu/dish-247.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-248",
+    "outletId": "outlet-b34-khaopiyo",
+    "dishName": "Bedmi Puri with Aloo Sabzi (4 pcs)",
+    "category": "Aloo Puri",
+    "price": "₹110",
+    "file": "/images/menu/dish-248.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-249",
+    "outletId": "outlet-b34-khaopiyo",
+    "dishName": "Crispy Aloo Tikki Burger",
+    "category": "Burgers",
+    "price": "₹80",
+    "file": "/images/menu/dish-249.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-250",
+    "outletId": "outlet-b34-khaopiyo",
+    "dishName": "Grilled Veg Cheese Burger",
+    "category": "Burgers",
+    "price": "₹95",
+    "file": "/images/menu/dish-250.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-251",
+    "outletId": "outlet-b34-khaopiyo",
+    "dishName": "Dahi Samosa Chaat Bowl",
+    "category": "Chaat",
+    "price": "₹95",
+    "file": "/images/menu/dish-251.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-252",
+    "outletId": "outlet-b34-khaopiyo",
+    "dishName": "Papdi Chaat with Sweet Curd",
+    "category": "Chaat",
+    "price": "₹85",
+    "file": "/images/menu/dish-252.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-253",
+    "outletId": "outlet-b34-khaopiyo",
+    "dishName": "Extra Butter Pav (2 pcs)",
+    "category": "Sides",
+    "price": "₹80",
+    "file": "/images/menu/dish-253.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-254",
+    "outletId": "outlet-b34-khaopiyo",
+    "dishName": "Thick Sweet Lassi with Malai",
+    "category": "Beverages",
+    "price": "₹85",
+    "file": "/images/menu/dish-254.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-255",
+    "outletId": "outlet-b34-khaopiyo",
+    "dishName": "Fresh Masala Shikanji Soda",
+    "category": "Beverages",
+    "price": "₹80",
+    "file": "/images/menu/dish-255.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-256",
+    "outletId": "outlet-b34-oven",
+    "dishName": "Personal Margherita Pizza (7 Inch)",
+    "category": "Pizzas",
+    "price": "₹150",
+    "file": "/images/menu/dish-256.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-257",
+    "outletId": "outlet-b34-oven",
+    "dishName": "Farm Fresh Veggie Pizza (7 Inch)",
+    "category": "Pizzas",
+    "price": "₹175",
+    "file": "/images/menu/dish-257.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-258",
+    "outletId": "outlet-b34-oven",
+    "dishName": "Paneer Tikka Fusion Pizza (7 Inch)",
+    "category": "Pizzas",
+    "price": "₹195",
+    "file": "/images/menu/dish-258.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-259",
+    "outletId": "outlet-b34-oven",
+    "dishName": "Cheesy Garlic Bread (4 pcs)",
+    "category": "Garlic Bread",
+    "price": "₹110",
+    "file": "/images/menu/dish-259.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-260",
+    "outletId": "outlet-b34-oven",
+    "dishName": "White Sauce Alfredo Pasta Bowl",
+    "category": "Pastas",
+    "price": "₹155",
+    "file": "/images/menu/dish-260.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-261",
+    "outletId": "outlet-b34-oven",
+    "dishName": "Red Sauce Arbiatta Pasta Bowl",
+    "category": "Pastas",
+    "price": "₹145",
+    "file": "/images/menu/dish-261.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-262",
+    "outletId": "outlet-b34-oven",
+    "dishName": "Crispy French Fries with Herb Dip",
+    "category": "Fries",
+    "price": "₹85",
+    "file": "/images/menu/dish-262.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-263",
+    "outletId": "outlet-b34-oven",
+    "dishName": "Peri-Peri Spiced Fries",
+    "category": "Fries",
+    "price": "₹95",
+    "file": "/images/menu/dish-263.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-264",
+    "outletId": "outlet-b34-oven",
+    "dishName": "Classic Virgin Mint Mojito",
+    "category": "Mojitos",
+    "price": "₹85",
+    "file": "/images/menu/dish-264.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-265",
+    "outletId": "outlet-b34-oven",
+    "dishName": "Blue Curacao Lagoon Cooler",
+    "category": "Mojitos",
+    "price": "₹95",
+    "file": "/images/menu/dish-265.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-266",
+    "outletId": "outlet-b34-oven",
+    "dishName": "Hazelnut Iced Cold Coffee",
+    "category": "Coffees",
+    "price": "₹115",
+    "file": "/images/menu/dish-266.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-267",
+    "outletId": "outlet-b34-oven",
+    "dishName": "Chocolate Thick Milkshake",
+    "category": "Shakes",
+    "price": "₹120",
+    "file": "/images/menu/dish-267.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-268",
+    "outletId": "outlet-canteen-b14",
+    "dishName": "Indori Poha with Crispy Sev Plate",
+    "category": "Breakfast",
+    "price": "₹80",
+    "file": "/images/menu/dish-268.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-269",
+    "outletId": "outlet-canteen-b14",
+    "dishName": "Crispy Punjabi Samosa (2 pcs)",
+    "category": "Snacks",
+    "price": "₹80",
+    "file": "/images/menu/dish-269.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-270",
+    "outletId": "outlet-canteen-b14",
+    "dishName": "Paneer Bread Pakora Plate (2 pcs)",
+    "category": "Snacks",
+    "price": "₹85",
+    "file": "/images/menu/dish-270.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-271",
+    "outletId": "outlet-canteen-b14",
+    "dishName": "Flaky Dal Kachori with Aloo Sabzi (2 pcs)",
+    "category": "Snacks",
+    "price": "₹85",
+    "file": "/images/menu/dish-271.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-272",
+    "outletId": "outlet-canteen-b14",
+    "dishName": "Khasta Desi Ghee Matri Plate (6 pcs)",
+    "category": "Snacks",
+    "price": "₹80",
+    "file": "/images/menu/dish-272.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-273",
+    "outletId": "outlet-canteen-b14",
+    "dishName": "Crispy Medu Vada Sambar (2 pcs)",
+    "category": "South Indian",
+    "price": "₹85",
+    "file": "/images/menu/dish-273.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-274",
+    "outletId": "outlet-canteen-b14",
+    "dishName": "Plain Crispy Dosa with Sambar",
+    "category": "South Indian",
+    "price": "₹95",
+    "file": "/images/menu/dish-274.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-275",
+    "outletId": "outlet-canteen-b14",
+    "dishName": "Canteen Special Masala Dosa",
+    "category": "South Indian",
+    "price": "₹115",
+    "file": "/images/menu/dish-275.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-276",
+    "outletId": "outlet-canteen-b14",
+    "dishName": "Standard Regular Veg Thali",
+    "category": "Thalis",
+    "price": "₹130",
+    "file": "/images/menu/dish-276.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-277",
+    "outletId": "outlet-canteen-b14",
+    "dishName": "Special Executive Paneer Thali",
+    "category": "Thalis",
+    "price": "₹175",
+    "file": "/images/menu/dish-277.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-278",
+    "outletId": "outlet-canteen-b14",
+    "dishName": "Chole Chawal Quick Lunch Bowl",
+    "category": "Meals",
+    "price": "₹110",
+    "file": "/images/menu/dish-278.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-279",
+    "outletId": "outlet-canteen-b14",
+    "dishName": "Rajma Chawal Comfort Bowl",
+    "category": "Meals",
+    "price": "₹110",
+    "file": "/images/menu/dish-279.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-280",
+    "outletId": "outlet-canteen-b14",
+    "dishName": "Cutting Masala Chai (Glass)",
+    "category": "Beverages",
+    "price": "₹80",
+    "file": "/images/menu/dish-280.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-281",
+    "outletId": "outlet-canteen-b14",
+    "dishName": "Sweet Malai Lassi (Glass)",
+    "category": "Beverages",
+    "price": "₹85",
+    "file": "/images/menu/dish-281.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-282",
+    "outletId": "outlet-canteen-b25",
+    "dishName": "Breakfast Poha with Boondi Plate",
+    "category": "Breakfast",
+    "price": "₹80",
+    "file": "/images/menu/dish-282.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-283",
+    "outletId": "outlet-canteen-b25",
+    "dishName": "Hot Punjabi Samosa (2 pcs)",
+    "category": "Snacks",
+    "price": "₹80",
+    "file": "/images/menu/dish-283.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-284",
+    "outletId": "outlet-canteen-b25",
+    "dishName": "Stuffed Bread Pakora (2 pcs)",
+    "category": "Snacks",
+    "price": "₹80",
+    "file": "/images/menu/dish-284.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-285",
+    "outletId": "outlet-canteen-b25",
+    "dishName": "Daily Student Veg Thali",
+    "category": "Thalis",
+    "price": "₹125",
+    "file": "/images/menu/dish-285.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-286",
+    "outletId": "outlet-canteen-b25",
+    "dishName": "Deluxe Paneer Thali",
+    "category": "Thalis",
+    "price": "₹170",
+    "file": "/images/menu/dish-286.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-287",
+    "outletId": "outlet-canteen-b25",
+    "dishName": "Chole Chawal Quick Bowl",
+    "category": "Meals",
+    "price": "₹110",
+    "file": "/images/menu/dish-287.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-288",
+    "outletId": "outlet-canteen-b25",
+    "dishName": "Rajma Masala with Rice Bowl",
+    "category": "Meals",
+    "price": "₹110",
+    "file": "/images/menu/dish-288.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-289",
+    "outletId": "outlet-canteen-b25",
+    "dishName": "Aloo Paratha with Curd & Butter (2 pcs)",
+    "category": "Parathas",
+    "price": "₹115",
+    "file": "/images/menu/dish-289.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-290",
+    "outletId": "outlet-canteen-b25",
+    "dishName": "Paneer Paratha with Curd & Pickle (2 pcs)",
+    "category": "Parathas",
+    "price": "₹135",
+    "file": "/images/menu/dish-290.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-291",
+    "outletId": "outlet-canteen-b25",
+    "dishName": "Medu Vada Sambar (2 pcs)",
+    "category": "South Indian",
+    "price": "₹85",
+    "file": "/images/menu/dish-291.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-292",
+    "outletId": "outlet-canteen-b25",
+    "dishName": "Ginger Cardamom Hot Tea",
+    "category": "Beverages",
+    "price": "₹80",
+    "file": "/images/menu/dish-292.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-293",
+    "outletId": "outlet-canteen-b25",
+    "dishName": "Chilled Sweet Curd Lassi",
+    "category": "Beverages",
+    "price": "₹80",
+    "file": "/images/menu/dish-293.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-294",
+    "outletId": "outlet-canteen-b26",
+    "dishName": "Steamed Idli Sambar (2 pcs)",
+    "category": "South Indian",
+    "price": "₹80",
+    "file": "/images/menu/dish-294.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-295",
+    "outletId": "outlet-canteen-b26",
+    "dishName": "Crispy Medu Vada (2 pcs)",
+    "category": "South Indian",
+    "price": "₹85",
+    "file": "/images/menu/dish-295.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-296",
+    "outletId": "outlet-canteen-b26",
+    "dishName": "Masala Dosa with Potato Filling",
+    "category": "South Indian",
+    "price": "₹110",
+    "file": "/images/menu/dish-296.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-297",
+    "outletId": "outlet-canteen-b26",
+    "dishName": "Onion Uttapam with Sambar",
+    "category": "South Indian",
+    "price": "₹115",
+    "file": "/images/menu/dish-297.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-298",
+    "outletId": "outlet-canteen-b26",
+    "dishName": "Tempered Breakfast Poha",
+    "category": "Breakfast",
+    "price": "₹80",
+    "file": "/images/menu/dish-298.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-299",
+    "outletId": "outlet-canteen-b26",
+    "dishName": "Crispy Samosa (2 pcs)",
+    "category": "Snacks",
+    "price": "₹80",
+    "file": "/images/menu/dish-299.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-300",
+    "outletId": "outlet-canteen-b26",
+    "dishName": "Savory Matri Crackers (6 pcs)",
+    "category": "Snacks",
+    "price": "₹80",
+    "file": "/images/menu/dish-300.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-301",
+    "outletId": "outlet-canteen-b26",
+    "dishName": "Block 26 Special Veg Thali",
+    "category": "Thalis",
+    "price": "₹130",
+    "file": "/images/menu/dish-301.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-302",
+    "outletId": "outlet-canteen-b26",
+    "dishName": "Paneer Makhani Thali",
+    "category": "Thalis",
+    "price": "₹170",
+    "file": "/images/menu/dish-302.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-303",
+    "outletId": "outlet-canteen-b26",
+    "dishName": "Kadhi Pakora with Steamed Rice",
+    "category": "Meals",
+    "price": "₹105",
+    "file": "/images/menu/dish-303.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-304",
+    "outletId": "outlet-canteen-b26",
+    "dishName": "South Indian Filter Coffee",
+    "category": "Beverages",
+    "price": "₹80",
+    "file": "/images/menu/dish-304.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-305",
+    "outletId": "outlet-canteen-b26",
+    "dishName": "Fresh Masala Tea Glass",
+    "category": "Beverages",
+    "price": "₹80",
+    "file": "/images/menu/dish-305.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-306",
+    "outletId": "outlet-canteen-b27",
+    "dishName": "Aloo Pyaz Tawa Paratha with Curd (2 pcs)",
+    "category": "Parathas",
+    "price": "₹115",
+    "file": "/images/menu/dish-306.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-307",
+    "outletId": "outlet-canteen-b27",
+    "dishName": "Paneer Bhurji with 3 Rotis",
+    "category": "Meals",
+    "price": "₹155",
+    "file": "/images/menu/dish-307.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-308",
+    "outletId": "outlet-canteen-b27",
+    "dishName": "Standard Student Lunch Thali",
+    "category": "Thalis",
+    "price": "₹125",
+    "file": "/images/menu/dish-308.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-309",
+    "outletId": "outlet-canteen-b27",
+    "dishName": "Executive Shahi Paneer Thali",
+    "category": "Thalis",
+    "price": "₹170",
+    "file": "/images/menu/dish-309.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-310",
+    "outletId": "outlet-canteen-b27",
+    "dishName": "Golden Punjabi Samosa (2 pcs)",
+    "category": "Snacks",
+    "price": "₹80",
+    "file": "/images/menu/dish-310.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-311",
+    "outletId": "outlet-canteen-b27",
+    "dishName": "Paneer Bread Pakora (2 pcs)",
+    "category": "Snacks",
+    "price": "₹85",
+    "file": "/images/menu/dish-311.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-312",
+    "outletId": "outlet-canteen-b27",
+    "dishName": "Morning Poha with Peanuts",
+    "category": "Breakfast",
+    "price": "₹80",
+    "file": "/images/menu/dish-312.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-313",
+    "outletId": "outlet-canteen-b27",
+    "dishName": "Grilled Cheese Sandwich",
+    "category": "Sandwiches",
+    "price": "₹95",
+    "file": "/images/menu/dish-313.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-314",
+    "outletId": "outlet-canteen-b27",
+    "dishName": "Veg Coleslaw Cold Sandwich",
+    "category": "Sandwiches",
+    "price": "₹85",
+    "file": "/images/menu/dish-314.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-315",
+    "outletId": "outlet-canteen-b27",
+    "dishName": "Chole Chawal Lunch Bowl",
+    "category": "Meals",
+    "price": "₹110",
+    "file": "/images/menu/dish-315.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-316",
+    "outletId": "outlet-canteen-b27",
+    "dishName": "Adrak Masala Chai (Glass)",
+    "category": "Beverages",
+    "price": "₹80",
+    "file": "/images/menu/dish-316.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-317",
+    "outletId": "outlet-canteen-b27",
+    "dishName": "Sweet Lassi with Cream Layer",
+    "category": "Beverages",
+    "price": "₹85",
+    "file": "/images/menu/dish-317.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-318",
+    "outletId": "outlet-canteen-b28",
+    "dishName": "Breakfast Poha with Sev & Coriander",
+    "category": "Breakfast",
+    "price": "₹80",
+    "file": "/images/menu/dish-318.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-319",
+    "outletId": "outlet-canteen-b28",
+    "dishName": "Crispy Samosa Plate (2 pcs)",
+    "category": "Snacks",
+    "price": "₹80",
+    "file": "/images/menu/dish-319.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-320",
+    "outletId": "outlet-canteen-b28",
+    "dishName": "Crispy Bread Pakora Plate (2 pcs)",
+    "category": "Snacks",
+    "price": "₹80",
+    "file": "/images/menu/dish-320.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-321",
+    "outletId": "outlet-canteen-b28",
+    "dishName": "Steamed Idli Sambar (2 pcs)",
+    "category": "South Indian",
+    "price": "₹80",
+    "file": "/images/menu/dish-321.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-322",
+    "outletId": "outlet-canteen-b28",
+    "dishName": "Block 28 Regular Veg Thali",
+    "category": "Thalis",
+    "price": "₹125",
+    "file": "/images/menu/dish-322.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-323",
+    "outletId": "outlet-canteen-b28",
+    "dishName": "Special Kadhai Paneer Thali",
+    "category": "Thalis",
+    "price": "₹165",
+    "file": "/images/menu/dish-323.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-324",
+    "outletId": "outlet-canteen-b28",
+    "dishName": "Rajma Masala with Steamed Rice",
+    "category": "Meals",
+    "price": "₹110",
+    "file": "/images/menu/dish-324.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-325",
+    "outletId": "outlet-canteen-b28",
+    "dishName": "Kadhi Chawal Comfort Meal",
+    "category": "Meals",
+    "price": "₹105",
+    "file": "/images/menu/dish-325.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-326",
+    "outletId": "outlet-canteen-b28",
+    "dishName": "Crispy Medu Vada (2 pcs)",
+    "category": "South Indian",
+    "price": "₹85",
+    "file": "/images/menu/dish-326.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-327",
+    "outletId": "outlet-canteen-b28",
+    "dishName": "Veg Grilled Sandwich",
+    "category": "Sandwiches",
+    "price": "₹90",
+    "file": "/images/menu/dish-327.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-328",
+    "outletId": "outlet-canteen-b28",
+    "dishName": "Hot Spiced Milk Chai",
+    "category": "Beverages",
+    "price": "₹80",
+    "file": "/images/menu/dish-328.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-329",
+    "outletId": "outlet-canteen-b28",
+    "dishName": "Cold Coffee with Ice Cream Scoop",
+    "category": "Beverages",
+    "price": "₹105",
+    "file": "/images/menu/dish-329.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-330",
+    "outletId": "outlet-canteen-b33",
+    "dishName": "Puri Sabzi Plate (4 Puris)",
+    "category": "Breakfast",
+    "price": "₹95",
+    "file": "/images/menu/dish-330.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-331",
+    "outletId": "outlet-canteen-b33",
+    "dishName": "Indori Poha with Sev",
+    "category": "Breakfast",
+    "price": "₹80",
+    "file": "/images/menu/dish-331.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-332",
+    "outletId": "outlet-canteen-b33",
+    "dishName": "Hot Punjabi Samosa Plate (2 pcs)",
+    "category": "Snacks",
+    "price": "₹80",
+    "file": "/images/menu/dish-332.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-333",
+    "outletId": "outlet-canteen-b33",
+    "dishName": "Flaky Dal Kachori with Aloo Sabzi (2 pcs)",
+    "category": "Snacks",
+    "price": "₹85",
+    "file": "/images/menu/dish-333.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-334",
+    "outletId": "outlet-canteen-b33",
+    "dishName": "Crispy Mathri Plate (6 pcs)",
+    "category": "Snacks",
+    "price": "₹80",
+    "file": "/images/menu/dish-334.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-335",
+    "outletId": "outlet-canteen-b33",
+    "dishName": "Stuffed Paneer Bread Pakora (2 pcs)",
+    "category": "Snacks",
+    "price": "₹85",
+    "file": "/images/menu/dish-335.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-336",
+    "outletId": "outlet-canteen-b33",
+    "dishName": "Block 33 Deluxe Veg Thali",
+    "category": "Thalis",
+    "price": "₹175",
+    "file": "/images/menu/dish-336.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-337",
+    "outletId": "outlet-canteen-b33",
+    "dishName": "Regular Daily Student Thali",
+    "category": "Thalis",
+    "price": "₹125",
+    "file": "/images/menu/dish-337.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-338",
+    "outletId": "outlet-canteen-b33",
+    "dishName": "Chole Chawal Lunch Bowl",
+    "category": "Meals",
+    "price": "₹110",
+    "file": "/images/menu/dish-338.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-339",
+    "outletId": "outlet-canteen-b33",
+    "dishName": "Aloo Paratha with Butter & Curd (2 pcs)",
+    "category": "Parathas",
+    "price": "₹115",
+    "file": "/images/menu/dish-339.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-340",
+    "outletId": "outlet-canteen-b33",
+    "dishName": "Special Kulhad Cutting Chai",
+    "category": "Beverages",
+    "price": "₹80",
+    "file": "/images/menu/dish-340.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-341",
+    "outletId": "outlet-canteen-b33",
+    "dishName": "Sweet Punjabi Malai Lassi",
+    "category": "Beverages",
+    "price": "₹85",
+    "file": "/images/menu/dish-341.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-342",
+    "outletId": "outlet-canteen-b34",
+    "dishName": "Wok Veg Hakka Noodles",
+    "category": "Chinese",
+    "price": "₹110",
+    "file": "/images/menu/dish-342.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-343",
+    "outletId": "outlet-canteen-b34",
+    "dishName": "Chilli Paneer Semi-Dry Bowl",
+    "category": "Chinese",
+    "price": "₹155",
+    "file": "/images/menu/dish-343.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-344",
+    "outletId": "outlet-canteen-b34",
+    "dishName": "Crispy Samosa Chaat Bowl",
+    "category": "Chaat",
+    "price": "₹95",
+    "file": "/images/menu/dish-344.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-345",
+    "outletId": "outlet-canteen-b34",
+    "dishName": "Punjabi Samosa (2 pcs)",
+    "category": "Snacks",
+    "price": "₹80",
+    "file": "/images/menu/dish-345.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-346",
+    "outletId": "outlet-canteen-b34",
+    "dishName": "Breakfast Poha with Peanuts",
+    "category": "Breakfast",
+    "price": "₹80",
+    "file": "/images/menu/dish-346.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-347",
+    "outletId": "outlet-canteen-b34",
+    "dishName": "Stuffed Bread Pakora (2 pcs)",
+    "category": "Snacks",
+    "price": "₹80",
+    "file": "/images/menu/dish-347.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-348",
+    "outletId": "outlet-canteen-b34",
+    "dishName": "Block 34 Special Lunch Thali",
+    "category": "Thalis",
+    "price": "₹170",
+    "file": "/images/menu/dish-348.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-349",
+    "outletId": "outlet-canteen-b34",
+    "dishName": "Standard Student Veg Thali",
+    "category": "Thalis",
+    "price": "₹125",
+    "file": "/images/menu/dish-349.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-350",
+    "outletId": "outlet-canteen-b34",
+    "dishName": "Rajma Chawal Meal Bowl",
+    "category": "Meals",
+    "price": "₹110",
+    "file": "/images/menu/dish-350.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-351",
+    "outletId": "outlet-canteen-b34",
+    "dishName": "Crispy Veg Spring Rolls (4 pcs)",
+    "category": "Chinese",
+    "price": "₹105",
+    "file": "/images/menu/dish-351.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-352",
+    "outletId": "outlet-canteen-b34",
+    "dishName": "Chilled Mango Thick Shake",
+    "category": "Beverages",
+    "price": "₹120",
+    "file": "/images/menu/dish-352.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-353",
+    "outletId": "outlet-canteen-b34",
+    "dishName": "Hot Masala Ginger Chai",
+    "category": "Beverages",
+    "price": "₹80",
+    "file": "/images/menu/dish-353.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-354",
+    "outletId": "outlet-fs-foodsquare",
+    "dishName": "Hyderabadi Chicken Dum Biryani",
+    "category": "Biryani",
+    "price": "₹195",
+    "file": "/images/menu/dish-354.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-355",
+    "outletId": "outlet-fs-foodsquare",
+    "dishName": "Old Delhi Butter Chicken with 2 Butter Naan",
+    "category": "Curries",
+    "price": "₹235",
+    "file": "/images/menu/dish-355.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-356",
+    "outletId": "outlet-fs-foodsquare",
+    "dishName": "Tandoori Chicken Tikka (6 pcs)",
+    "category": "Tandoori Starters",
+    "price": "₹185",
+    "file": "/images/menu/dish-356.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-357",
+    "outletId": "outlet-fs-foodsquare",
+    "dishName": "Mutton Seekh Kebab (4 pcs)",
+    "category": "Tandoori Starters",
+    "price": "₹215",
+    "file": "/images/menu/dish-357.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-358",
+    "outletId": "outlet-fs-foodsquare",
+    "dishName": "Crispy BBQ Tandoori Wings (6 pcs)",
+    "category": "Starters",
+    "price": "₹175",
+    "file": "/images/menu/dish-358.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-359",
+    "outletId": "outlet-fs-foodsquare",
+    "dishName": "Kadai Chicken Semi Gravy",
+    "category": "Curries",
+    "price": "₹210",
+    "file": "/images/menu/dish-359.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-360",
+    "outletId": "outlet-fs-foodsquare",
+    "dishName": "Egg Curry Bowl with Jeera Rice (2 Eggs)",
+    "category": "Combos",
+    "price": "₹155",
+    "file": "/images/menu/dish-360.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-361",
+    "outletId": "outlet-fs-foodsquare",
+    "dishName": "Chicken Seekh Roll in Rumali Roti",
+    "category": "Rolls",
+    "price": "₹165",
+    "file": "/images/menu/dish-361.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-362",
+    "outletId": "outlet-fs-foodsquare",
+    "dishName": "Tandoori Garlic Butter Naan (2 pcs)",
+    "category": "Breads",
+    "price": "₹95",
+    "file": "/images/menu/dish-362.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-363",
+    "outletId": "outlet-fs-foodsquare",
+    "dishName": "Fresh Rumali Roti (2 pcs)",
+    "category": "Breads",
+    "price": "₹80",
+    "file": "/images/menu/dish-363.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-364",
+    "outletId": "outlet-fs-foodsquare",
+    "dishName": "Chicken Keema Kulcha with Gravy",
+    "category": "Combos",
+    "price": "₹180",
+    "file": "/images/menu/dish-364.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-365",
+    "outletId": "outlet-fs-foodsquare",
+    "dishName": "Chilled Mint Masala Shikanji",
+    "category": "Beverages",
+    "price": "₹80",
+    "file": "/images/menu/dish-365.jpg",
+    "status": "verified"
+  },
+  {
+    "dishId": "dish-366",
+    "outletId": "outlet-fs-foodsquare",
+    "dishName": "Sweet Mango Lassi Glass",
+    "category": "Beverages",
+    "price": "₹95",
+    "file": "/images/menu/dish-366.jpg",
+    "status": "verified"
+  }
+]

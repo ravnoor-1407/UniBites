@@ -1,0 +1,68 @@
+[
+  {
+    "id": "fc-campus-cafe",
+    "name": "Campus Café",
+    "shortName": "Campus Café",
+    "location": "Near LIM & Main Gate (Block 02)",
+    "description": "Main gate food court with dessert kiosks, pan-Asian wok bowls, Oven Express pizzas and artisan coffees.",
+    "badge": "Main Gate Hub",
+    "coverImage": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80",
+    "campusSpot": "Campus Cafe",
+    "isAcademicCanteenZone": false
+  },
+  {
+    "id": "fc-cse-apartments",
+    "name": "CSE & Apartment Food Court",
+    "shortName": "CSE & Apartments",
+    "location": "Beside Block 33-38 & Uni-Apartments",
+    "description": "Bustling hub for engineering students and apartment residents featuring kathi rolls, kulhad chai and late snacks.",
+    "badge": "Tech Central",
+    "coverImage": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80",
+    "campusSpot": "Uni-Apartments",
+    "isAcademicCanteenZone": false
+  },
+  {
+    "id": "fc-bh2",
+    "name": "BH2 Hostel Food Court",
+    "shortName": "BH2 Food Court",
+    "location": "Boys Hostel 2 Complex",
+    "description": "Hostel zone with Shahji's Amritsari Kulchas, Hangouts South Indian dosas and Nand Juice shakes.",
+    "badge": "Hostel Zone",
+    "coverImage": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    "campusSpot": "BH2 Hostel",
+    "isAcademicCanteenZone": false
+  },
+  {
+    "id": "fc-behind-34",
+    "name": "Behind 34th Block Food Court",
+    "shortName": "Behind Block 34",
+    "location": "Rear Lawn behind CSE Block 34",
+    "description": "Engineers hangout with Khao Piyo pav bhaji, Fun Bites noodles and The Chaap Express tandoori items.",
+    "badge": "CSE Hangout",
+    "coverImage": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80",
+    "campusSpot": "Block 34",
+    "isAcademicCanteenZone": false
+  },
+  {
+    "id": "fc-rooftop-canteens",
+    "name": "Academic Block Canteens",
+    "shortName": "Academic Canteens",
+    "location": "Blocks 14 (MSB), 25, 26, 27, 28, 33, 34",
+    "description": "100-seat academic dining halls serving breakfast poha, samosas, thalis with live seat vacancy tracking.",
+    "badge": "100-Seat Dining Halls • Dine-In Vacancy Tracker",
+    "coverImage": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "campusSpot": "Block 14 MSB",
+    "isAcademicCanteenZone": true
+  },
+  {
+    "id": "fc-food-square",
+    "name": "Food Square",
+    "shortName": "Food Square",
+    "location": "Independent Hub (Opposite Lovely Mall)",
+    "description": "Non-veg dining pavilion featuring chicken dum biryani, butter chicken, and tandoori specials.",
+    "badge": "Non-Veg Specialty",
+    "coverImage": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80",
+    "campusSpot": "Food Square",
+    "isAcademicCanteenZone": false
+  }
+]
