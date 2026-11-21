@@ -68,6 +68,26 @@ class FileDatabase {
         createdAt: new Date().toISOString()
       },
       {
+        id: 'user-student-2',
+        name: 'Simran Kaur',
+        rollNumber: '12204892',
+        email: 'simran@unibites.app',
+        phone: '9876543211',
+        password: passwordHash,
+        role: 'student',
+        createdAt: new Date().toISOString()
+      },
+      {
+        id: 'user-student-3',
+        name: 'Rohan Verma',
+        rollNumber: '12204893',
+        email: 'rohan@unibites.app',
+        phone: '9876543212',
+        password: passwordHash,
+        role: 'student',
+        createdAt: new Date().toISOString()
+      },
+      {
         id: 'user-vendor-1',
         name: 'Belgian Waffle Counter Staff',
         email: 'vendor1@unibites.app',
@@ -79,14 +99,58 @@ class FileDatabase {
         createdAt: new Date().toISOString()
       },
       {
-        id: 'user-vendor-2',
-        name: 'Block 14 Canteen Manager',
-        email: 'vendor2@unibites.app',
+        id: 'user-vendor-wowchina',
+        name: 'WOW! China Kitchen Lead',
+        email: 'vendor.wowchina@unibites.app',
         phone: '9876500002',
         password: passwordHash,
         role: 'vendor',
-        outletId: 'outlet-canteen-b14',
-        outletName: 'Block 14 Canteen (MSB)',
+        outletId: 'outlet-cc-wowchina',
+        outletName: 'WOW! China',
+        createdAt: new Date().toISOString()
+      },
+      {
+        id: 'user-vendor-hangouts',
+        name: 'Hangouts Dosa Master',
+        email: 'vendor.hangouts@unibites.app',
+        phone: '9876500003',
+        password: passwordHash,
+        role: 'vendor',
+        outletId: 'outlet-bh2-hangouts',
+        outletName: 'Hangouts South Indian',
+        createdAt: new Date().toISOString()
+      },
+      {
+        id: 'user-vendor-shahji',
+        name: 'Shahji Kitchen Lead',
+        email: 'vendor.shahji@unibites.app',
+        phone: '9876500004',
+        password: passwordHash,
+        role: 'vendor',
+        outletId: 'outlet-bh2-shahji',
+        outletName: 'Shahji\'s Amritsari Kulcha',
+        createdAt: new Date().toISOString()
+      },
+      {
+        id: 'user-vendor-khaopiyo',
+        name: 'Khao Piyo Pav Bhaji Chef',
+        email: 'vendor.khaopiyo@unibites.app',
+        phone: '9876500005',
+        password: passwordHash,
+        role: 'vendor',
+        outletId: 'outlet-b34-khaopiyo',
+        outletName: 'Khao Piyo (Pav Bhaji & Bhature)',
+        createdAt: new Date().toISOString()
+      },
+      {
+        id: 'user-vendor-chaap',
+        name: 'Chaap Express Grille Lead',
+        email: 'vendor.chaap@unibites.app',
+        phone: '9876500006',
+        password: passwordHash,
+        role: 'vendor',
+        outletId: 'outlet-b34-chaap',
+        outletName: 'The Chaap Express',
         createdAt: new Date().toISOString()
       }
     ];

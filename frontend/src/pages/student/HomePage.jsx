@@ -465,7 +465,7 @@ const HomePage = () => {
               </p>
             </div>
             <span className="text-xs font-mono font-bold text-primary shrink-0">
-              30 Outlets Across LPU
+              {outlets.length} Outlets Across 3 Food Courts
             </span>
           </div>
 

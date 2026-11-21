@@ -115,7 +115,7 @@ const OutletsListPage = () => {
           Campus Outlets & Canteens
         </h1>
         <p className="text-xs text-text-muted mt-0.5">
-          Browse all 30 university dining spots, food courts and academic canteens
+          Browse prominent university dining kiosks across Campus Café, BH-2, and Behind Block 34
         </p>
       </div>
 
