@@ -465,7 +465,7 @@ const HomePage = () => {
               </p>
             </div>
             <span className="text-xs font-mono font-bold text-primary shrink-0">
-              {outlets.length} Outlets Across 3 Food Courts
+              {outlets.length} Outlets & Rooftop Canteens Across Campus
             </span>
           </div>
 

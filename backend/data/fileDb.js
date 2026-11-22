@@ -152,6 +152,28 @@ class FileDatabase {
         outletId: 'outlet-b34-chaap',
         outletName: 'The Chaap Express',
         createdAt: new Date().toISOString()
+      },
+      {
+        id: 'user-vendor-2',
+        name: 'Block 14 Canteen Manager',
+        email: 'vendor2@unibites.app',
+        phone: '9876500007',
+        password: passwordHash,
+        role: 'vendor',
+        outletId: 'outlet-canteen-b14',
+        outletName: 'Block 14 Canteen (MSB)',
+        createdAt: new Date().toISOString()
+      },
+      {
+        id: 'user-vendor-b34canteen',
+        name: 'Block 34 Canteen Lead',
+        email: 'vendor.b34canteen@unibites.app',
+        phone: '9876500008',
+        password: passwordHash,
+        role: 'vendor',
+        outletId: 'outlet-canteen-b34',
+        outletName: 'Block 34 Canteen',
+        createdAt: new Date().toISOString()
       }
     ];
 

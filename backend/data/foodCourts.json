@@ -31,5 +31,16 @@
     "coverImage": "/images/menu/amul_butter_pav_bhaji.webp",
     "campusSpot": "Block 34",
     "isAcademicCanteenZone": false
+  },
+  {
+    "id": "fc-rooftop-canteens",
+    "name": "Academic Block Rooftop Canteens",
+    "shortName": "Rooftop Canteens",
+    "location": "Blocks 14 (MSB), 25, 26, 27, 28, 33, 34",
+    "description": "100-seat rooftop & academic dining halls serving breakfast poha, samosas, thalis with live seat vacancy tracking.",
+    "badge": "100-Seat Dining Halls • Dine-In Vacancy Tracker",
+    "coverImage": "/images/menu/breakfast_poha.webp",
+    "campusSpot": "Block 14 MSB",
+    "isAcademicCanteenZone": true
   }
 ]

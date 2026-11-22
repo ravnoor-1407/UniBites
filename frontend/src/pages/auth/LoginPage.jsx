@@ -185,6 +185,26 @@ const LoginPage = () => {
         },
       ],
     },
+    {
+      court: 'Academic Block Rooftop Canteens',
+      courtBadge: '100-Seat Dining Halls',
+      vendors: [
+        {
+          id: 'vendor2@unibites.app',
+          name: 'Block 14 Canteen (MSB)',
+          spot: 'Block 14 Ground Floor',
+          cuisine: 'Breakfast Poha, Samosa, Thalis',
+          email: 'vendor2@unibites.app',
+        },
+        {
+          id: 'vendor.b34canteen@unibites.app',
+          name: 'Block 34 Canteen',
+          spot: 'Block 34 Ground Floor Atrium',
+          cuisine: 'Hakka Noodles, Samosa Chaat, Thalis',
+          email: 'vendor.b34canteen@unibites.app',
+        },
+      ],
+    },
   ];
 
   return (
@@ -328,7 +348,7 @@ const LoginPage = () => {
                 }`}
               >
                 <ChefHat className="w-3.5 h-3.5" />
-                <span>Food Court Vendors (6)</span>
+                <span>Food Court & Canteen Vendors (8)</span>
               </button>
             </div>
 
