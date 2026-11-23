@@ -10,7 +10,9 @@ import {
   ArrowLeft, 
   AlertCircle,
   Share2,
-  Users
+  Users,
+  LayoutGrid,
+  List
 } from 'lucide-react';
 import { useCart } from '../../context/CartContext';
 import { useLocation } from '../../context/LocationContext';
@@ -42,7 +44,8 @@ const OutletMenuPage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Filters within outlet
+  // Filters & View Mode within outlet (Default: Grid View)
+  const [viewMode, setViewMode] = useState('grid');
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [vegOnly, setVegOnly] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
@@ -75,12 +78,20 @@ const OutletMenuPage = () => {
 
   if (loading) {
     return (
-      <div className="max-w-4xl mx-auto px-4 py-8 space-y-6">
-        <Skeleton className="w-full h-48 rounded-2xl" />
+      <div className="max-w-5xl mx-auto px-4 py-8 space-y-6">
+        <Skeleton className="w-full h-56 rounded-2xl" />
         <Skeleton className="w-3/4 h-8" />
-        <div className="space-y-4">
-          {[1, 2, 3, 4].map(i => (
-            <Skeleton key={i} className="w-full h-24 rounded-xl" />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {[1, 2, 3, 4, 5, 6].map(i => (
+            <div key={i} className="bg-white rounded-2xl border border-border p-3 space-y-3 shadow-soft">
+              <Skeleton className="w-full aspect-[4/3] rounded-xl" />
+              <Skeleton className="w-2/3 h-5" />
+              <Skeleton className="w-full h-4" />
+              <div className="flex justify-between items-center pt-2">
+                <Skeleton className="w-16 h-6" />
+                <Skeleton className="w-20 h-8 rounded-lg" />
+              </div>
+            </div>
           ))}
         </div>
       </div>
@@ -280,15 +291,50 @@ const OutletMenuPage = () => {
         )}
       </div>
 
-      {/* Dishes List (Dish Rows) */}
+      {/* Dishes Section: Switchable Grid (Default) or List View */}
       <div className="space-y-4">
-        <div className="flex items-center justify-between">
-          <h3 className="font-serif font-bold text-lg text-text">
-            Menu ({filteredDishes.length} Items)
-          </h3>
-          <span className="text-xs font-mono text-text-muted">
-            All prices ₹80 - ₹250
-          </span>
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-2 border-b border-border/80">
+          <div className="flex items-center gap-3">
+            <h3 className="font-serif font-bold text-lg sm:text-xl text-text">
+              Menu ({filteredDishes.length} Items)
+            </h3>
+            <span className="text-xs font-mono text-text-muted hidden sm:inline">
+              • All prices ₹80 - ₹250
+            </span>
+          </div>
+
+          {/* View Switcher: Grid View (Default) vs List View */}
+          <div className="flex items-center gap-2 self-end sm:self-auto">
+            <span className="text-xs font-mono text-text-muted hidden md:inline">View:</span>
+            <div className="inline-flex p-1 bg-surface-alt rounded-xl border border-border">
+              <button
+                type="button"
+                onClick={() => setViewMode('grid')}
+                aria-label="Grid view"
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono font-bold transition-all ${
+                  viewMode === 'grid'
+                    ? 'bg-primary text-white shadow-soft'
+                    : 'text-text-muted hover:text-text hover:bg-white/60'
+                }`}
+              >
+                <LayoutGrid className="w-3.5 h-3.5" />
+                <span>Grid</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => setViewMode('list')}
+                aria-label="List view"
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono font-bold transition-all ${
+                  viewMode === 'list'
+                    ? 'bg-primary text-white shadow-soft'
+                    : 'text-text-muted hover:text-text hover:bg-white/60'
+                }`}
+              >
+                <List className="w-3.5 h-3.5" />
+                <span>List</span>
+              </button>
+            </div>
+          </div>
         </div>
 
         {filteredDishes.length === 0 ? (
@@ -302,8 +348,101 @@ const OutletMenuPage = () => {
               setSearchQuery('');
             }}
           />
+        ) : viewMode === 'grid' ? (
+          /* 1. Grid View (Default) */
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 animate-fadeIn">
+            {filteredDishes.map(dish => {
+              const qty = getItemQuantity(dish.id);
+              const isSoldOut = dish.isAvailable === false;
+
+              return (
+                <div
+                  key={dish.id}
+                  className={`group bg-white rounded-2xl border border-border overflow-hidden shadow-card hover:shadow-soft hover:border-primary/40 transition-all flex flex-col justify-between ${
+                    isSoldOut ? 'opacity-65 bg-surface-alt/40' : ''
+                  }`}
+                >
+                  {/* Top: 4:3 Aspect Dish Image with Floating Badges */}
+                  <div>
+                    <div className="relative aspect-[4/3] w-full bg-surface-alt overflow-hidden">
+                      <DishImage
+                        src={dish.image}
+                        name={dish.name}
+                        category={dish.category}
+                        aspectRatio="aspect-[4/3]"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+
+                      {/* Top-Left: Dietary Marker */}
+                      <div className="absolute top-2.5 left-2.5 bg-white/95 backdrop-blur-sm p-1 rounded-md shadow-soft border border-border/50 flex items-center justify-center">
+                        <DietaryMark isVeg={dish.isVeg} size="sm" />
+                      </div>
+
+                      {/* Top-Right: Sold Out Badge if unavailable */}
+                      {isSoldOut && (
+                        <span className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-md bg-text/85 backdrop-blur-sm text-white font-mono font-bold text-[10px] uppercase shadow-soft">
+                          Sold Out
+                        </span>
+                      )}
+
+                      {/* Bottom-Right: Price Tag Badge */}
+                      <span className="absolute bottom-2.5 right-2.5 px-2.5 py-1 rounded-lg bg-text/85 backdrop-blur-sm text-white font-mono font-bold text-xs shadow-soft">
+                        ₹{dish.price}
+                      </span>
+                    </div>
+
+                    {/* Dish Details */}
+                    <div className="p-4 space-y-2">
+                      <div className="flex items-center justify-between text-[11px] font-mono text-text-muted">
+                        <span className="uppercase tracking-wider font-semibold text-primary truncate">
+                          {dish.category}
+                        </span>
+                        <span className="flex items-center gap-1 shrink-0">
+                          <Clock className="w-3 h-3 text-accent" />
+                          <span>~{dish.prepMins || 7}m prep</span>
+                        </span>
+                      </div>
+
+                      <h4 className="font-serif font-bold text-base text-text group-hover:text-primary transition-colors line-clamp-1">
+                        {dish.name}
+                      </h4>
+
+                      <p className="text-xs text-text-muted line-clamp-2 leading-relaxed">
+                        {dish.description}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Card Footer: Price & Stepper Button */}
+                  <div className="px-4 py-3 bg-surface-alt/40 border-t border-border flex items-center justify-between gap-3">
+                    <div>
+                      <span className="text-[10px] font-mono uppercase text-text-muted block">Price</span>
+                      <span className="font-serif font-bold text-base text-text">
+                        ₹{dish.price}
+                      </span>
+                    </div>
+
+                    <div>
+                      {isSoldOut || isPaused ? (
+                        <span className="text-xs font-mono font-bold text-text-muted uppercase py-1">
+                          Unavailable
+                        </span>
+                      ) : (
+                        <Stepper
+                          quantity={qty}
+                          onIncrement={() => addToCart(dish, outlet)}
+                          onDecrement={() => updateQuantity(dish.id, qty - 1)}
+                        />
+                      )}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         ) : (
-          <div className="space-y-3">
+          /* 2. List View */
+          <div className="space-y-3 animate-fadeIn">
             {filteredDishes.map(dish => {
               const qty = getItemQuantity(dish.id);
               const isSoldOut = dish.isAvailable === false;
@@ -319,6 +458,9 @@ const OutletMenuPage = () => {
                   <div className="flex-1 min-w-0 pr-2">
                     <div className="flex items-center gap-2 mb-1">
                       <DietaryMark isVeg={dish.isVeg} size="sm" />
+                      <span className="text-[10px] font-mono text-primary uppercase font-bold tracking-wider">
+                        {dish.category}
+                      </span>
                       {isSoldOut && (
                         <span className="px-2 py-0.5 rounded bg-border text-text-muted font-mono font-bold text-[10px] uppercase">
                           Sold Out
@@ -348,7 +490,7 @@ const OutletMenuPage = () => {
 
                   {/* Right: Dish Image & Add Stepper */}
                   <div className="flex flex-col items-end gap-2.5 shrink-0">
-                    <div className="w-24 h-24 sm:w-28 sm:h-24">
+                    <div className="w-24 h-24 sm:w-28 sm:h-24 rounded-xl overflow-hidden">
                       <DishImage
                         src={dish.image}
                         name={dish.name}
